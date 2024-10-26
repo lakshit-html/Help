@@ -1,9 +1,4 @@
-.logo{
-    position: absolute;
-    display: flex;
-    z-index: 5;
-   
-}
+
 
 ul{
         list-style-type: none;
@@ -16,7 +11,7 @@ ul{
     /* position:inherit; */
     display: flex;
     text-decoration: none;
-    margin-left: 650px;
+    margin-left: 620px;
     margin-top: 10px;
     z-index: 5;
     font-size: 30px;
@@ -57,3 +52,11 @@ ul{
     font-family: About;
     src: url(Insanibc.ttf);
  }
+
+  .Nav{display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ margin: -10px;
+ padding: 0px;
+ background-color: rgba(8, 14, 24, 0.89);
+ width: 1520px;}
