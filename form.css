@@ -1,0 +1,62 @@
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+float: left;
+/* position:inherit; */
+display: flex;
+text-decoration: none;
+margin-left: 620px;
+margin-top: 10px;
+z-index: 5;
+font-size: 30px;
+
+
+}
+ul li {
+padding: 10px 40px;
+display: inline ;
+
+/* border :3px solid black; */
+/* position: relative; */
+z-index: 5;
+
+
+
+
+}
+a{
+position:relatve;
+background: -webkit-linear-gradient(45deg ,#F6EA41 , #F048C6);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 100;
+font-family:HeyComic;
+transition: 0.5s ease-in-out;
+
+}
+a:hover{
+font-size: 40px;
+}
+
+@font-face {
+font-family: HeyComic;
+src: url(Hey\ Comic.ttf);
+}
+@font-face {
+font-family: About;
+src: url(Insanibc.ttf);
+}
+
+.Nav{display: flex;
+justify-content: flex-start;
+align-items: center;
+margin: -10px;
+padding: 0px;
+background-color: rgba(8, 14, 24, 0.89);
+width: 1520px;}
