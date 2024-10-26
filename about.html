@@ -1,285 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=2136, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=2136, initial-scale=1.0" />
     <title>About HELP</title>
     <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-/* Main Heading */
-        h1 {
-            color: rgb(255, 255, 255);
-            font-family: About;
-            font-size: 3rem;
-            font-weight: 900;
-            letter-spacing: .025em;
-            line-height: 1;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            margin-top: 10px;
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      /* Main Heading */
+      h1 {
+        color: rgb(255, 255, 255);
+        font-family: About;
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        line-height: 1;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        margin-top: 10px;
+      }
+      /* Bgimage Of MAin HEading */
+      .fstpanel {
+        background-image: url(map-bg.png);
+        padding: 35px 442px;
+        margin-left: -40px;
+      }
 
+      .hd {
+        padding: 50px 50px 0px 50px;
+        margin-left: -50px;
+      }
 
-        }
-/* Bgimage Of MAin HEading */
-        .fstpanel {
-            background-image: url(map-bg.png);
-            padding: 35px 442px;
-            margin-left: -40px;
-        }
+      .heading {
+        color: darkorange;
+        margin-top: -18px;
+        padding: 0px 50px 50px 50px;
+        margin-left: -50px;
+      }
 
-        .hd {
-            padding: 50px 50px 0px 50px;
-            margin-left: -50px;
-        }
+      div {
+        width: 655px;
+        margin-left: 0px;
+      }
 
-        .heading {
-            color: darkorange;
-            margin-top: -18px;
-            padding: 0px 50px 50px 50px;
-            margin-left: -50px;
-        }
+      body {
+        background-color: rgb(245, 241, 222);
+      }
 
-        div {
-            width: 655px;
-            margin-left: 0px;
+      p {
+        margin-left: 60px;
+        color: rgb(51, 49, 49);
+        font-size: medium;
+        font-family: HeyComic;
+      }
+      /* heading2 */
+      h2 {
+        /* margin-left: 60px; */
+        margin-bottom: 5px;
+      }
 
-        }
+      @font-face {
+        font-family: HeyComic;
+        src: url(Hey\ Comic.ttf);
+      }
 
-        body {
-            background-color: rgb(245, 241, 222);
-        }
+      @font-face {
+        font-family: About;
+        src: url(Insanibc.ttf);
+      }
 
-        p {
-            margin-left: 60px;
-            color: rgb(51, 49, 49);
-            font-size: medium;
-            font-family: HeyComic;
-        }
-/* heading2 */
-        h2 {
-            /* margin-left: 60px; */
-            margin-bottom: 5px;
-        }
+      /* navbar */
+      .Nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgba(8, 14, 24, 0.89);
+        width: 1499px;
+      }
 
-        @font-face {
-            font-family: HeyComic;
-            src: url(Hey\ Comic.ttf);
-        }
+      /* ul tag */
 
-        @font-face {
-            font-family: About;
-            src: url(Insanibc.ttf);
-        }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
 
-/* navbar */
-        .Nav {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 0px;
-            padding: 0px;
-            background-color: rgba(8, 14, 24, 0.89);
-            width: 1499px;
+      ul {
+        float: left;
+        display: flex;
+        text-decoration: none;
+        margin-left: 650px;
+        margin-top: 10px;
+        z-index: 5;
+        font-size: 30px;
+      }
+      /* li tag */
+      ul li {
+        padding: 10px 40px;
+        display: inline;
+        z-index: 5;
+      }
+      /* anchor tag */
+      a {
+        position: relatve;
+        background: -webkit-linear-gradient(45deg, #f6ea41, #f048c6);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 100;
+        font-family: HeyComic;
+        transition: 0.5s ease-in-out;
+      }
+      /* anchor hover effect */
+      a:hover {
+        font-size: 34px;
+      }
 
-
-        }
-
-
-/* ul tag */
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        ul {
-            float: left;
-            display: flex;
-            text-decoration: none;
-            margin-left: 650px;
-            margin-top: 10px;
-            z-index: 5;
-            font-size: 30px;
-
-
-        }
-/* li tag */
-        ul li {
-            padding: 10px 40px;
-            display: inline;
-            z-index: 5;
-
-
-
-
-        }
-/* anchor tag */
-        a {
-            position: relatve;
-            background: -webkit-linear-gradient(45deg, #F6EA41, #F048C6);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 100;
-            font-family: HeyComic;
-            transition: 0.5s ease-in-out;
-
-        }
-/* anchor hover effect */
-        a:hover {
-            font-size: 34px;
-        }
-
-        @font-face {
-            font-family: HeyComic;
-            src: url(Hey\ Comic.ttf);
-        }
-/* bg of div */
-        .divbg {
-            background-color: white;
-            margin: 20px 20px;
-            display: flex;
-            justify-content: center;
-            padding: 50px;
-            border-radius: 20px;
-            flex-wrap: wrap;
-            transition-duration: 0.5s;
-
-        }
-/* hover effect of div bg */
-        .divbg:hover {
-            background-color: rgba(219, 213, 213, 0.555);
-        }
-/* our vaues heading */
-        .ourvalues {
-            margin-left: -3px;
-        }
-/* img1 */
-        .img1 {
-            margin-left: 835px;
-            position: absolute;
-            margin-top: 40px;
-            border-radius: 10px;
-            width: 580px;
-        }
-/* img2 */
-        .img2 {
-            position: absolute;
-            margin-left: 835px;
-            margin-top: 500px;
-            border-radius: 10px;
-            width: 580px;
-        }
-        .footer{
-           position: relative;
-    background-color: rgb(43 49 56);
-    display: flex;
-    z-index: 10;
-    height: 200px;
-    width: 1496px;
-        }
+      @font-face {
+        font-family: HeyComic;
+        src: url(Hey\ Comic.ttf);
+      }
+      /* bg of div */
+      .divbg {
+        background-color: white;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        transition-duration: 0.5s;
+      }
+      /* hover effect of div bg */
+      .divbg:hover {
+        background-color: rgba(219, 213, 213, 0.555);
+      }
+      /* our vaues heading */
+      .ourvalues {
+        margin-left: -3px;
+      }
+      /* img1 */
+      .img1 {
+        margin-left: 835px;
+        position: absolute;
+        margin-top: 40px;
+        border-radius: 10px;
+        width: 580px;
+      }
+      /* img2 */
+      .img2 {
+        position: absolute;
+        margin-left: 835px;
+        margin-top: 500px;
+        border-radius: 10px;
+        width: 580px;
+      }
+      .footer {
+        position: relative;
+        background-color: rgb(43 49 56);
+        display: flex;
+        z-index: 10;
+        height: 200px;
+        width: 1496px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- nav bar -->
     <nav class="Nav">
-        <ul class="ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="features.html">Features</a></li>
-        </ul>
-
+      <ul class="ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="features.html">Features</a></li>
+      </ul>
     </nav>
     <!-- bg image and main heading -->
     <div class="fstpanel">
-        <h1 class="hd">Empowering Communities To Advance Social Change
-            Through</h1>
-        <h1 class="heading">Accessible Technology Solutions</h1>
-
+      <h1 class="hd">
+        Empowering Communities To Advance Social Change Through
+      </h1>
+      <h1 class="heading">Accessible Technology Solutions</h1>
     </div>
     <div class="objects">
-        <img class="img1" src="360_F_598856174_OjkYL8BbXuYxRmHrV37SOUabxeJxQucq.jpg" alt>
-        <img src="istockphoto-1093177328-612x612.jpg" alt class="img2">
-        <div class="divbg">
-            <h2>
-                Introduction:
-            </h2>
-            <p>Welcome to [HELP], a revolutionary platform connecting
-                citizens with municipal corporations to address local issues
-                efficiently. Our mission is to bridge the gap between
-                citizens and municipal authorities, ensuring seamless
-                communication and effective problem-solving.
-            </p>
-        </div>
-        <div class="divbg">
-            <h2>
-                Our Vision:
-            </h2>
-            <p>A nation where every community thrives, and every citizen's
-                voice is heard. We envision a future where municipal
-                services are accessible, efficient, and transparent,
-                fostering vibrant, sustainable, and livable cities.
-
-            </p>
-        </div>
-        <div class="divbg">
-            <h2>
-                Our Objectives:
-            </h2>
-            <p>
-                1. Provide a user-friendly platform for citizens to report
-                municipal-related issues. <br>
-                2. Ensure timely resolution of reported issues through
-                collaboration with municipal authorities. <br>
-                3. Promote transparency, accountability, and civic
-                engagement. <br>
-                4. Empower citizens to take ownership of community
-                development. <br>
-            </p>
-        </div>
-        <div class="divbg">
-            <h2>
-                How We Work:
-            </h2>
-            <p>
-                1. Citizens report issues through our intuitive reporting
-                system. <br>
-                2. Our team verifies and categorizes reports. <br>
-                3. Municipal authorities receive notified reports and
-                respond with updates. <br>
-                4. Citizens track progress and provide feedback. <br>
-            </p>
-        </div>
-        <div class="divbg" ;>
-            <h2 class="ourvalues">
-                Our Values:
-            </h2>
-            <br>
-            <p>
-                1. Citizen-centric approach <br>
-                2. Transparency and accountability <br>
-                3. Collaboration and partnerships <br>
-                4. Innovation and continuous improvement <br>
-                5. Inclusivity and social responsibility <br>
-            </p>
-        </div>
-        <div class="divbg">
-            <h2>
-                Meet Our Team:
-            </h2>
-        </div>
+      <img
+        class="img1"
+        src="360_F_598856174_OjkYL8BbXuYxRmHrV37SOUabxeJxQucq.jpg"
+        alt
+      />
+      <img src="istockphoto-1093177328-612x612.jpg" alt class="img2" />
+      <div class="divbg">
+        <h2>Introduction:</h2>
+        <p>
+          Welcome to [HELP], a revolutionary platform connecting citizens with
+          municipal corporations to address local issues efficiently. Our
+          mission is to bridge the gap between citizens and municipal
+          authorities, ensuring seamless communication and effective
+          problem-solving.
+        </p>
+      </div>
+      <div class="divbg">
+        <h2>Our Vision:</h2>
+        <p>
+          A nation where every community thrives, and every citizen's voice is
+          heard. We envision a future where municipal services are accessible,
+          efficient, and transparent, fostering vibrant, sustainable, and
+          livable cities.
+        </p>
+      </div>
+      <div class="divbg">
+        <h2>Our Objectives:</h2>
+        <p>
+          1. Provide a user-friendly platform for citizens to report
+          municipal-related issues. <br />
+          2. Ensure timely resolution of reported issues through collaboration
+          with municipal authorities. <br />
+          3. Promote transparency, accountability, and civic engagement. <br />
+          4. Empower citizens to take ownership of community development. <br />
+        </p>
+      </div>
+      <div class="divbg">
+        <h2>How We Work:</h2>
+        <p>
+          1. Citizens report issues through our intuitive reporting system.
+          <br />
+          2. Our team verifies and categorizes reports. <br />
+          3. Municipal authorities receive notified reports and respond with
+          updates. <br />
+          4. Citizens track progress and provide feedback. <br />
+        </p>
+      </div>
+      <div class="divbg" ;>
+        <h2 class="ourvalues">Our Values:</h2>
+        <br />
+        <p>
+          1. Citizen-centric approach <br />
+          2. Transparency and accountability <br />
+          3. Collaboration and partnerships <br />
+          4. Innovation and continuous improvement <br />
+          5. Inclusivity and social responsibility <br />
+        </p>
+      </div>
+      <div class="divbg">
+        <h2>Meet Our Team:</h2>
+      </div>
     </div>
-    <footer class="footer">
-abcd
-    </footer>
-</body>
-
+    <footer class="footer">abcd</footer>
+  </body>
 </html>
