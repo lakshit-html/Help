@@ -7,19 +7,20 @@
     <style>
         /* navbar */
         .Nav {
+            display: flex;
             justify-content: flex-start;
             align-items: center;
             margin: 0px;
-            padding: 0px;
+            padding: 4px;
             background-color: rgba(8, 14, 24, 0.89);
-            display: flex   ;
-
-
+            width: 100.1%;
+            /* width 1499px */
+            position: sticky;
         }
-
-
-/* ul tag */
-
+        html{
+            padding: 0px;
+            margin: -8px;
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -28,12 +29,13 @@
         }
 
         ul {
-            float: left;
-            display: flexbox;
+           
+            display: flex;
             text-decoration: none;
+            margin-left: 20px;
             margin-top: 10px;
             z-index: 5;
-            font-size: 30px;
+            font-size: 18px;
 
 
         }
@@ -42,29 +44,19 @@
             padding: 10px 40px;
             display: inline;
             z-index: 5;
-
-
-
-
         }
-/* anchor tag */
         a {
             position: relatve;
-            background: -webkit-linear-gradient(45deg, #F6EA41, #F048C6);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+           color: rgb(110, 104, 104);
             font-weight: 100;
             font-family: HeyComic;
             transition: 0.5s ease-in-out;
-
+            text-decoration: none;
 
         }
-        @font-face {
-            font-family: About;
-            src: url(Insanibc.ttf);}
 /* anchor hover effect */
         a:hover {
-            font-size: 34px;
+           color: white;
         }
 
         @font-face {
