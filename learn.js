@@ -1,5 +1,8 @@
-let lakshit;
-let x = 5;
+let x = 0;
 for (let a = 1; a <= 10 ; a++){
-    console.log(x,"x",a,"=",x*a)
+    x =x +a;
+    console.log(x)
 }
+
+
+
