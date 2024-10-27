@@ -87,6 +87,9 @@
             align-items: center;
             size: 0;
         }
+        body{
+            background-color: rgb(245, 241, 222);
+        }
 
         .fstpanel {
             background-image: url(map-bg.png);
@@ -103,6 +106,43 @@
             margin: 0;
             padding: 0;
         }
+        .contact{
+            background-color: white;
+            margin: 20px 30px;
+            display: inline-block;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 430px;
+            overflow: hidden;
+            position:relative;
+            /* align-items: center; */
+            transition-duration: 2s;
+        }
+        .contact img{
+           height: 430px;
+           width: 300px;
+           border-radius: 15px;
+           -moz-transition-duration: 2s;        }
+        h4{
+            margin-top: 20px;
+        }
+        .contact:hover{
+            overflow: visible;
+            .text{
+                background-color: rgba(34, 34, 34, 0.674);
+                position: relative;
+                margin-top: -100px;
+                color: wheat;
+            }
+        }
+        .text{
+            background-color: rgba(168, 160, 160, 0.515);
+            transition-duration: 0.5s;
+        }
+       
     </style>
 </head>
 <body>
@@ -119,6 +159,26 @@
         <div class="fstpanel">
             <h1 class="hd">Get In Touch</h1>
             <h1 class="heading">&nbsp&nbsp Contact</h1>
+     </div>
+     <div class="contact">
+     <img src="Garvit.jpg" alt="">
+     <div class="text">
+
+         <h4>Garvit Solanki</h4>
+         <p>HTML</p>
+         <p>garvitsolanki1111@gmail.com</p>
+         <p>Frontend Developer</p>
+     </div>
+     </div>
+     <div class="contact">
+        <img src="Lakshit.jpg" alt="">
+        <div class="text">
+
+            <h4>Lakshit Solanki</h4>
+            <p>Java Script</p>
+            <p>lakshitsolanki1234@gmail.com</p>
+            <p>Frontend Developer</p>
+        </div>
      </div>
       
     

@@ -1,5 +1,5 @@
 let a = prompt("Enter your grade :");
-if (a>=80&& a<=100){
+if (a>=90&& a<=100){
     console.log("A")
 }
 else if (a>=70&& a<=89){
