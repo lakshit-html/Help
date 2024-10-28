@@ -12,12 +12,12 @@ body{
    background-repeat: no-repeat;
    justify-content: center;
    align-items: center;
-   background-size: cover;
-   -moz-backface-visibility: 50%;  
+   background-size: cover; 
    display: grid;
+   background-color: black;
 }
 hr{
-   width: 100%;
+   width: 80%;
    background-color: darkorange;
    height: 2px;
    border: 0px none ;
@@ -47,6 +47,8 @@ h1{
    opacity: 80%;
    font-family: Bree Serif;
    margin-left: 30px;
+   display: block;
+   transition: all ease-in-out 1s;
 }
 h3{
    color: #ffffff;
@@ -55,21 +57,31 @@ h3{
    font-family: HeyComic;
    margin-left: 30px;
    margin-top: -70px;
+   display: block;
+   transition: all ease-in-out 1s;
 }
 .hdd{
    display: grid;
    align-items: center; 
    justify-items: center;
+   transition: all ease-in-out 1s;
 }
+
+   /* h1:hover{
+      font-size:120px;
+   }
+ */
+
 
 ul {
   
    display: flex;
    text-decoration: none;
-   margin-left: -600px;
    margin-top: 20px;
+   margin-left: 93px;
    z-index: 5;
    font-size: 18px;
+   position: static
 
 
 }
@@ -112,3 +124,17 @@ a:hover {
  padding: 0px;
  background-color: rgba(8, 14, 24, 0.89);
  width: 1520px;} */
+
+ .menu2{
+   
+      background-color: rgb(255, 255, 255);
+      margin: 20px 30px;
+      display: inline-block;
+      /* justify-content: center; */
+      padding: 30px;
+      border-radius: 20px;
+      /* flex-wrap: wrap; */
+      transition-duration: 0.5s;
+      width: 300px;
+      height: 200px;
+ }
