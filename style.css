@@ -12,6 +12,7 @@ body{
    background-repeat: no-repeat;
    justify-content: center;
    align-items: center;
+   background-size: cover;
    display: grid;
    background-color:    rgb(255, 255, 255);
 }
