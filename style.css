@@ -6,15 +6,69 @@
    font-weight: 400;
    font-style: normal;
  }
+ .text{
+   margin-top:0px;
+   padding:140px 0px ;
+ }
  
 body{
-   background-image: url(bg4-removebg-preview.png);
+   background-image: url(bg3.jpg);
    background-repeat: no-repeat;
    justify-content: center;
    align-items: center;
    background-size: 100vw;
    display: grid;
-   background-color:    rgb(255, 255, 255);
+   background-color:rgb(0, 0, 0);
+}
+.logo{
+   background-color: #ffffff;
+   margin-top: 50px;
+   height: 150px;
+   width: 150px;
+   margin: -40px 74px;
+   border-radius: 216px;
+   box-shadow: 1px 1px 15px black;
+   overflow: hidden;
+   align-content: center;
+   transition: all ease-in-out 0.2s;
+}
+
+
+
+
+
+   
+
+
+
+
+.logo img{
+   height: 135px;
+   width: 135px;
+   border-radius: 100px;
+   margin-left: 7px;
+   margin-top: 4px;
+   transition: all ease-in-out 3s;
+}
+
+
+.home-box{
+   background-color: #ffffff;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   height: 400px;
+   width: 300px;
+   margin: 20px 60px;
+   border-radius: 20px;
+   display: grid;
+   transition: all ease-in-out 3s;
+}
+.prob{
+   display: inline-flex;
+   justify-content: center;
+   margin-top: 130px;
 }
 hr{
    width: 80%;
@@ -125,15 +179,4 @@ a:hover {
  background-color: rgba(8, 14, 24, 0.89);
  width: 1520px;} */
 
- .menu2{
-   
-      background-color: rgb(69, 64, 64);
-      margin: 20px 30px;
-      display: inline-block;
-      padding: 30px;
-      border-radius: 20px;
-      flex-wrap: wrap;
-      width: 300px;
-      height: 200px;
- }
  
