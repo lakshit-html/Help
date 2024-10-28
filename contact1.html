@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +18,12 @@
             /* width 1499px */
             position: sticky;
         }
-        html{
+
+        html {
             padding: 0px;
             margin: -8px;
         }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -29,7 +32,7 @@
         }
 
         ul {
-           
+
             display: -moz-inline-grid;
             text-decoration: none;
             margin-left: 20px;
@@ -39,45 +42,49 @@
 
 
         }
-/* li tag */
+
+        /* li tag */
         ul li {
             padding: 10px 40px;
             display: inline;
             z-index: 5;
         }
+
         a {
             position: relatve;
-           color: rgb(110, 104, 104);
+            color: rgb(110, 104, 104);
             font-weight: 100;
             font-family: HeyComic;
             transition: 0.5s ease-in-out;
             text-decoration: none;
 
         }
-/* anchor hover effect */
+
+        /* anchor hover effect */
         a:hover {
-           color: white;
+            color: white;
         }
-        
-                @font-face {
-                    font-family: HeyComic;
-                    src: url(Hey\ Comic.ttf);
-                }
-        
-                @font-face {
-                    font-family: About;
-                    src: url(Insanibc.ttf);
-                }
-        
+
+        @font-face {
+            font-family: HeyComic;
+            src: url(Hey\ Comic.ttf);
+        }
+
+        @font-face {
+            font-family: About;
+            src: url(Insanibc.ttf);
+        }
+
         .hd {
             font-family: HeyComic;
         }
 
         .heading {
-            color: darkorange;           
+            color: darkorange;
             font-family: HeyComic;
             margin-left: -65px;
         }
+
         h1 {
             color: rgb(255, 255, 255);
             font-family: About;
@@ -92,7 +99,8 @@
             align-items: center;
             size: 0;
         }
-        body{
+
+        body {
             background-color: rgb(245, 241, 222);
         }
 
@@ -107,11 +115,13 @@
 
 
         }
-        *{
+
+        * {
             margin: 0;
             padding: 0;
         }
-        .contact{
+
+        .contact {
             background-color: white;
             margin: 20px 25px;
             display: inline-block;
@@ -122,36 +132,41 @@
             width: 300px;
             height: 430px;
             overflow: hidden;
-            position:relative;
+            position: relative;
             /* align-items: center; */
             transition-duration: 2s;
         }
-        .contact img{
-           height: 430px;
-           width: 300px;
-           border-radius: 15px;   
-        overflow: hidden;  
-    transition: all ease-in-out 1s;  }
-        
-        h2{
+
+        .contact img {
+            height: 430px;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all ease-in-out 1s;
+        }
+
+        h2 {
             margin-top: 20px;
             margin-left: 70px;
             color: wheat;
             font-family: HeyComic;
         }
-        .contact:hover{
-            .text{
+
+        .contact:hover {
+            .text {
                 background-color: rgba(49, 66, 61, 0.767);
                 position: relative;
                 margin-top: -108px;
                 border-radius: 0px 0px 15px 15px;
             }
         }
-        .text{
+
+        .text {
             align-items: center;
             transition-duration: 0.5s;
         }
-        p{
+
+        p {
             justify-content: center;
             align-items: center;
             display: grid;
@@ -159,131 +174,403 @@
             font-weight: bold;
         }
 
-        @media only screen and (max-width: 412px) and (min-height: 0px){
-            .contact{
-            background-color: white;
-            margin: 20px 58px;
-            display: inline-block;
-            justify-content: center;
-            padding: 10px;
-            border-radius: 20px;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 430px;
-            overflow: hidden;
-            position:relative;
-            /* align-items: center; */
-            transition-duration: 2s;
-        }
-        .contact img{
-           height: 430px;
-           width: 300px;
-           border-radius: 15px;   
-        overflow: hidden;  
-    transition: all ease-in-out 1s;  }
-        
-        h2{
-            margin-top: 20px;
-            margin-left: 70px;
-            color: wheat;
-            font-family: HeyComic;
-        }
-        .contact:hover{
-            .text{
-                background-color: rgba(49, 66, 61, 0.767);
+        @media only screen and (max-width: 412px) and (min-width: 375px) {
+            .contact {
+                background-color: white;
+                margin: 20px 49px;
+                display: inline-block;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 20px;
+                flex-wrap: wrap;
+                width: 300px;
+                height: 430px;
+                overflow: hidden;
                 position: relative;
-                margin-top: -108px;
-                border-radius: 0px 0px 15px 15px;
+                /* align-items: center; */
+                transition-duration: 2s;
             }
-        }
+
+            .contact img {
+                height: 430px;
+                width: 300px;
+                border-radius: 15px;
+                overflow: hidden;
+                transition: all ease-in-out 1s;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-left: 70px;
+                color: wheat;
+                font-family: HeyComic;
+            }
+
+            .contact:hover {
+                .text {
+                    background-color: rgba(49, 66, 61, 0.767);
+                    position: relative;
+                    margin-top: -108px;
+                    border-radius: 0px 0px 15px 15px;
+                }
+            }
+
             .fstpanel {
-            background-image: url(map-bg.png);
-            height: 118px;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: -400px;
-            display: flex;
-            justify-content: center;
+                background-image: url(map-bg.png);
+                height: 118px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: -400px;
+                display: flex;
+                justify-content: center;
 
 
-        }
+            }
+
             .hd {
-            font-family: HeyComic;
-        }
+                font-family: HeyComic;
+            }
 
-        .heading {
-            color: darkorange;           
-            font-family: HeyComic;
-            margin-left: -30px;
-        }
+            .heading {
+                color: darkorange;
+                font-family: HeyComic;
+                margin-left: -30px;
+            }
+
             h1 {
-            color: rgb(255, 255, 255);
-            font-family: About;
-            font-size: 2rem;
-            font-weight: 900;
-            letter-spacing: .025em;
-            line-height: 1;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
+                color: rgb(255, 255, 255);
+                font-family: About;
+                font-size: 2rem;
+                font-weight: 900;
+                letter-spacing: .025em;
+                line-height: 1;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .nav {
+
+                display: grid;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px;
+                padding: 7px;
+                background-color: rgba(8, 14, 24, 0.89);
+                width: 100%;
+                /* width 1499px */
+                position: sticky;
+
+            }
+
+            ul {
+
+                display: flex;
+                text-decoration: none;
+                margin-left: 36px;
+
+                margin-top: 10px;
+
+                font-size: 12px;
+                justify-content: center;
+                align-content: center;
+                align-items: baseline;
+                justify-items: start;
+                ;
+
+
+            }
+
+            /* li tag */
+            ul li {
+                padding: 10px 40px;
+                display: inline;
+                z-index: 5;
+            }
+
+            a {
+                position: relatve;
+                color: rgb(110, 104, 104);
+                font-weight: 100;
+                font-family: HeyComic;
+                transition: 0.5s ease-in-out;
+                text-decoration: none;
+                margin-left: -58px;
+
+            }
+
+            /* anchor hover effect */
+            a:hover {
+                color: white;
+            }
         }
-            .nav{
+
+        @media only screen and (max-width: 414px) and (min-width: 412px) {
+            .contact {
+                background-color: white;
+                margin: 20px 36px;
+                display: inline-block;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 20px;
+                flex-wrap: wrap;
+                width: 300px;
+                height: 430px;
+                overflow: hidden;
+                position: relative;
+                /* align-items: center; */
+                transition-duration: 2s;
+            }
+
+            .contact img {
+                height: 430px;
+                width: 300px;
+                border-radius: 15px;
+                overflow: hidden;
+                transition: all ease-in-out 1s;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-left: 70px;
+                color: wheat;
+                font-family: HeyComic;
+            }
+
+            .contact:hover {
+                .text {
+                    background-color: rgba(49, 66, 61, 0.767);
+                    position: relative;
+                    margin-top: -108px;
+                    border-radius: 0px 0px 15px 15px;
+                }
+            }
+
+            .fstpanel {
+                background-image: url(map-bg.png);
+                height: 118px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: -400px;
+                display: flex;
+                justify-content: center;
+
+
+            }
+            
+            .hd {
+                font-family: HeyComic;
+                margin-left: -30px;
+            }
+
+            .heading {
+                color: darkorange;
+                font-family: HeyComic;
+                margin-left: -30px;
+            }
+
+            h1 {
+                color: rgb(255, 255, 255);
+                font-family: About;
+                font-size: 2rem;
+                font-weight: 900;
+                letter-spacing: .025em;
+                line-height: 1;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .nav {
+
+                display: grid;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px;
+                padding: 7px;
+                background-color: rgba(8, 14, 24, 0.89);
+                width: 100%;
+                /* width 1499px */
+                position: sticky;
+
+            }
+
+            ul {
+
+                display: flex;
+                text-decoration: none;
+                margin-left: 36px;
+
+                margin-top: 10px;
+
+                font-size: 12px;
+                justify-content: center;
+                align-content: center;
+                align-items: baseline;
+                justify-items: start;
+                ;
+
+
+            }
+
+            /* li tag */
+            ul li {
+                padding: 10px 40px;
+                display: inline;
+                z-index: 5;
+            }
+
+            a {
+                position: relatve;
+                color: rgb(110, 104, 104);
+                font-weight: 100;
+                font-family: HeyComic;
+                transition: 0.5s ease-in-out;
+                text-decoration: none;
+                margin-left: -70px;
+
+            }
+
+            /* anchor hover effect */
+            a:hover {
+                color: white;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .contact {
+                background-color: white;
+                margin: 20px 37px;
+                display: inline-block;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 20px;
+                flex-wrap: wrap;
+                width: 300px;
+                height: 430px;
+                overflow: hidden;
+                position: relative;
+                /* align-items: center; */
+                transition-duration: 2s;
+            }
+
+            .contact img {
+                height: 430px;
+                width: 300px;
+                border-radius: 15px;
+                overflow: hidden;
+                transition: all ease-in-out 1s;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-left: 70px;
+                color: wheat;
+                font-family: HeyComic;
+            }
+
+            .contact:hover {
+                .text {
+                    background-color: rgba(49, 66, 61, 0.767);
+                    position: relative;
+                    margin-top: -108px;
+                    border-radius: 0px 0px 15px 15px;
+                }
+            }
+
+            .fstpanel {
+                background-image: url(map-bg.png);
+                height: 118px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: -400px;
+                display: flex;
+                justify-content: center;
+
+
+            }
+
+            .hd {
+                font-family: HeyComic;
+            }
+
+            .heading {
+                color: darkorange;
+                font-family: HeyComic;
+                margin-left: -30px;
+            }
+
+            h1 {
+                color: rgb(255, 255, 255);
+                font-family: About;
+                font-size: 2rem;
+                font-weight: 900;
+                letter-spacing: .025em;
+                line-height: 1;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .nav {
+                display: grid;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px;
+                padding: 3px;
+                background-color: rgba(8, 14, 24, 0.89);
                 
-            display: grid;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 0px;
-            padding: 0px;
-            background-color: rgba(8, 14, 24, 0.89);
-            width: 100%;
-            /* width 1499px */
-            position: sticky;
-        
+
             }
 
-        ul {
-           
-            display: flex;
-    text-decoration: none;
-    margin-left: 36px;
+            ul {
 
-    margin-top: 10px;
+                display: flex;
+                text-decoration: none;
+                margin-left: 36px;
 
-    font-size: 12px;
-    justify-content: center;
-    align-content: center;
-    align-items: baseline;
-    justify-items: start;;
+                margin-top: 10px;
+
+                font-size: 12px;
+                justify-content: center;
+                align-content: center;
+                align-items: baseline;
+                justify-items: start;
+                ;
 
 
-        }
-/* li tag */
-        ul li {
-            padding: 10px 40px;
-            display: inline;
-            z-index: 5;
-        }
-        a {
-            position: relatve;
-           color: rgb(110, 104, 104);
-            font-weight: 100;
-            font-family: HeyComic;
-            transition: 0.5s ease-in-out;
-            text-decoration: none;
-            margin-left: -58px;
-
-        }
-/* anchor hover effect */
-        a:hover {
-           color: white;
-        }
             }
-        
-       
+
+            /* li tag */
+            ul li {
+                padding: 10px 40px;
+            }
+
+            a {
+                position: relative;
+                color: rgb(110, 104, 104);
+                font-weight: 100;
+                font-family: HeyComic;
+                transition: 0.5s ease-in-out;
+                text-decoration: none;
+                margin-left: -70px;
+
+            }
+
+            /* anchor hover effect */
+            a:hover {
+                color: white;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav class="Nav">
         <ul class="ul">
@@ -292,66 +579,67 @@
             <li><a href="contact1.html">Contact</a></li>
             <li><a href="work.html">Works</a></li>
             <li><a href="features.html">Features</a></li>
+           
         </ul>
 
     </nav>
-        <div class="fstpanel">
-            <h1 class="hd">Get In Touch</h1>
-            <h1 class="heading">&nbsp&nbsp Contact</h1>
-     </div>
-     <div class="blocks">
+    <div class="fstpanel">
+        <h1 class="hd">Get In Touch</h1>
+        <h1 class="heading">&nbsp&nbsp Contact</h1>
+    </div>
+    <div class="blocks">
 
-         <div class="contact">
-         <img src="Garvit.jpg" alt="">
-         <div class="text">
-    
-             <h2>Garvit Solanki</h4>
-             <p>HTML - CSS</p>
-             <p>garvitsolanki1111@gmail.com</p>
-             <p>Frontend Developer</p>
-         </div>
-         </div>
-         <div class="contact">
-            <img src="Lakshit.jpg" alt="">
+        <div class="contact">
+            <img src="Garvit.jpg" alt>
             <div class="text">
-    
+
+                <h2>Garvit Solanki</h4>
+                    <p>HTML - CSS</p>
+                    <p>garvitsolanki1111@gmail.com</p>
+                    <p>Frontend Developer</p>
+            </div>
+        </div>
+        <div class="contact">
+            <img src="Lakshit.jpg" alt>
+            <div class="text">
+
                 <h2>Lakshit Solanki</h4>
-                <p>Java Script</p>
-                <p>lakshitsolanki1234@gmail.com</p>
-                <p>Frontend Developer</p>
+                    <p>Java Script</p>
+                    <p>lakshitsolanki1234@gmail.com</p>
+                    <p>Frontend Developer</p>
             </div>
-         </div>
-         <div class="contact">
-            <img src="Gauransh.jpg" alt="">
+        </div>
+        <div class="contact">
+            <img src="Gauransh.jpg" alt>
             <div class="text">
-    
+
                 <h2>Gauransh Sugandhi</h4>
-                <p>HTML - CSS</p>
-                <p>example@gmail.com</p>
-                <p>Frontend Developer</p>
+                    <p>HTML - CSS</p>
+                    <p>example@gmail.com</p>
+                    <p>Frontend Developer</p>
             </div>
-         </div>
-         <div class="contact">
-            <img src="pragya.jpg" alt="">
+        </div>
+        <div class="contact">
+            <img src="pragya.jpg" alt>
             <div class="text">
-    
+
                 <h2>Pragya Goyal</h4>
-                <p>Java Script</p>
-                <p>Example@gmail.com</p>
-                <p>Frontend Developer</p>
+                    <p>Java Script</p>
+                    <p>Example@gmail.com</p>
+                    <p>Frontend Developer</p>
             </div>
-         </div>
-         <div class="contact">
-            <img src="Purva.jpg" alt="">
+        </div>
+        <div class="contact">
+            <img src="Purva.jpg" alt>
             <div class="text">
-    
+
                 <h2>Purva Balar</h4>
-                <p>PHP</p>
-                <p>Example@gmail.com</p>
-                <p>Backend Developer</p>
+                    <p>PHP</p>
+                    <p>Example@gmail.com</p>
+                    <p>Backend Developer</p>
             </div>
-          
-        
-     </div>
+
+        </div>
 </body>
+
 </html>

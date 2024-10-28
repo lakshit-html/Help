@@ -8,13 +8,12 @@
  }
  
 body{
-   background-image: url(bg3.jpg);
+   background-image: url(bg4-removebg-preview.png);
    background-repeat: no-repeat;
    justify-content: center;
    align-items: center;
-   background-size: cover; 
    display: grid;
-   background-color: black;
+   background-color:    rgb(255, 255, 255);
 }
 hr{
    width: 80%;
@@ -102,7 +101,7 @@ a {
 }
 /* anchor hover effect */
 a:hover {
-  color: #f4a261  ;
+  color: #c4ec57  ;
 }
  @font-face {
     font-family: HeyComic;
@@ -127,14 +126,13 @@ a:hover {
 
  .menu2{
    
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(69, 64, 64);
       margin: 20px 30px;
       display: inline-block;
-      /* justify-content: center; */
       padding: 30px;
       border-radius: 20px;
-      /* flex-wrap: wrap; */
-      transition-duration: 0.5s;
+      flex-wrap: wrap;
       width: 300px;
       height: 200px;
  }
+ 
