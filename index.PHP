@@ -11,9 +11,22 @@ if(!$con)
 {
     echo "not connected";
 }
-else
+
+// 
+$name =$_POST['Name'];
+$email =$_POST['Email'];
+$message =$_POST['Message']
+
+$sql = "INSERT INTO `test`(`name`, `email`, `message`) VALUES ('[name]','[email]','[messagae]')";
+
+$result = mysqli_query($con , $sql);
+
+if($result)
 {
-    echo "connected";
+    echo "submitted";
 }
 
-?>
+else 
+{
+    echo "error";
+}
