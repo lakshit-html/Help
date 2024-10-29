@@ -1,50 +1,60 @@
-<html>
-    <head>
-<title>
-    Contact US
-</title>
-<style>
-    .form{
-        background-color: aliceblue;
-        width: 350px;
-        height: 400px;
-        border-radius: 20px;
-        border: 2px solid;
-        
-        
-    }
-    input{
-        background-color: rgb(234, 225, 225);
-        height: 30px;
-        width: 280px;
-        border: none;
-        margin-left: 30px;
-    }
-    .main{
-        margin-left: 300px;
-    }
-    .form input label{
-        padding-top: 500px;
-    }
-</style>
-    </head>
-    <body>
-        <div>
-            <h2>CONTACT US</h2>
-            <p>Fill out the form and let us know your reason for reaching out,and we'll be in touch soon</p>
-            <a href="#">Chat with a team member</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Hut - Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="Nav">
+        <ul class="ul">
+            <li><a class="a"href="index.html">Home</a></li>
+            <li><a class="a"href="about.html">About</a></li>
+            <li><a class="a"href="contactmain.html">Contact</a></li>
+            <li><a class="a"href="#">Works</a></li>
+            <li><a class="a"href="features.html">Features</a></li>
+            <li  style="background-color: darkorange;border-radius: 10px;margin-left: 100px;"><a href="https://forms.gle/4uLaKbQbFiefg8Uy7">Create A Deployment</a></li>
+            <li  style="background-color: darkorange;border-radius: 10px;margin-left: 60px;"><a href="https://forms.gle/shPwUZuaJo3uii7t5">FeedBack</a></li>
+          </ul>
+            
+            </nav>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p class="contact-description">Fill out the form and let us know your reason for reaching out, and we’ll be in touch soon.</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form" action="save.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <!-- Contact Details -->
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <p><strong>Corporation:</strong> HelpMe.in</p>
+        <p><strong>Phone:</strong> +91 8209452477</p>
+        <p><strong>Email:</strong>lakshitsolanki1234@gmail.com</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="#" class= "fa fa-facebook" id="social-icon"></a>
+          <a href="#" class="fa fa-instagram" id="social-icon"></a>
+          <a href="#" class="fa fa-twitter" id="social-icon"></a>
         </div>
-        <div class="main">
-        <div class="form">
-           <label> Your Name*</label>
-            <input type="text" placeholder="Your name">
-            <label>Your email*</label>
-            <input type="email" placeholder="you@organization.com">
-            <label>Message*</label>
-            <input type="text" placeholder="Message">
-    <input type="checkbox" name="" id="">
-    I'm not a robot
-        </div>
-</div>
-    </body>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
