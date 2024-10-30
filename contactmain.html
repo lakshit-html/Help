@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burger Hut - Contact Us</title>
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HELP</title>
+    <link rel="stylesheet" href="style.css"> <!-- Use the same CSS as your Index page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <nav class="Nav">
         <ul class="ul">
             <li><a class="a" href="index.html">Home</a></li>
             <li><a class="a" href="about.html">About</a></li>
             <li><a class="a" href="contactmain.html">Contact</a></li>
-            <li><a class="a" href="#">Works</a></li>
+            <li><a class="a" href="work.html">Works</a></li>
             <li><a class="a" href="features.html">Features</a></li>
             <li style="background-color: darkorange; border-radius: 10px; margin-left: 100px;"><a href="https://forms.gle/4uLaKbQbFiefg8Uy7">Create A Deployment</a></li>
-            <li style="background-color: darkorange; border-radius: 10px; margin-left: 60px;"><a href="https://forms.gle/shPwUZuaJo3uii7t5">FeedBack</a></li>
+            <li style="background-color: darkorange; border-radius: 10px; margin-left: 60px;"><a href="https://forms.gle/shPwUZuaJo3uii7t5">Feedback</a></li>
         </ul>
     </nav>
-    
-    <!-- Contact Section -->
+
+    <div class="hdd"> 
+        <img src="HelpME-removebg-preview.png" alt="" class="logo3">
+    </div>
+    <hr>
+
     <section class="contact-section">
         <h2>Contact Us</h2>
         <p class="contact-description">Fill out the form and let us know your reason for reaching out, and we’ll be in touch soon.</p>
@@ -29,13 +34,13 @@
             <!-- Contact Form -->
             <form class="contact-form" action="index.php" method="post">
                 <label for="name">Name</label>
-                <input type="text" id="Name" name="name" required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="Email" name="email" required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="message">Message</label>
-                <textarea id="Message" name="Message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
@@ -46,6 +51,7 @@
                 <p><strong>Corporation:</strong> HelpMe.in</p>
                 <p><strong>Phone:</strong> +91 8209452477</p>
                 <p><strong>Email:</strong> helpme919191000@gmail.com</p>
+
                 <!-- Social Media Links -->
                 <div class="social-links">
                     <a href="#" class="fa fa-facebook" id="social-icon"></a>
@@ -55,5 +61,78 @@
             </div>
         </div>
     </section>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-section {
+            padding: 40px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            width: 50%;
+            background-color: #37474f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffcc80;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #455a64;
+            color: #e0e0e0;
+        }
+
+        .submit-btn {
+            background-color: #ff8a00;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #e52e71;
+        }
+
+        .contact-info {
+            width: 40%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #ffcc80;
+            font-size: 30px;
+        }
+        
+    </style>
+
 </body>
 </html>

@@ -4,208 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-       .Nav {
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(245, 241, 222);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        .Nav {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            margin: 0px;
-            padding: 4px;
-            background-color: rgba(8, 14, 24, 0.89);
-            width: 100.1%;
-            /* width 1499px */
-            position: sticky;
+            padding: 10px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
         }
-        html{
-            padding: 0px;
-            margin: -8px;
-        }
+
         ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        ul {
-           
             display: flex;
-            text-decoration: none;
-            margin-left: 20px;
-            margin-top: 10px;
-            z-index: 5;
+            gap: 20px;
+            padding: 0;
+        }
+
+        ul li a {
+            color: #fff;
+            padding: 10px 20px;
             font-size: 18px;
-
-
-        }
-/* li tag */
-        ul li {
-            padding: 10px 40px;
-            display: inline;
-            z-index: 5;
-        }
-        a {
-            position: relatve;
-           color: rgb(110, 104, 104);
-            font-weight: 100;
-            font-family: HeyComic;
-            transition: 0.5s ease-in-out;
             text-decoration: none;
-
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background-color 0.3s;
         }
-/* anchor hover effect */
-        a:hover {
-           color: white;
-        }
-        
-                @font-face {
-                    font-family: HeyComic;
-                    src: url(Hey\ Comic.ttf);
-                }
-        
-                @font-face {
-                    font-family: About;
-                    src: url(Insanibc.ttf);
-                }
-        
-        .hd {
-            font-family: HeyComic;
-            color: darkorange;
-          
+        ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
-       
-
-            .para{
-            display: grid;
-            justify-content: center;
-            align-items: center; 
-            color: rgb(255, 255, 255);
-            margin-left: -108px;
-            font-size: 30px;
-            font-family: About;
-            font-weight: lighter;
-
-            }
-        
-        h1 {
-            color: rgb(255, 255, 255);
-            font-family: About;
-            font-size: 60px;
-            font-weight: 900;
-            letter-spacing: .025em;
-            margin-bottom: 0px;
-            text-transform: uppercase;
-            margin-top: 20px;
-            display: block;
-            justify-content: center;
-            align-items: center;
-            size: 0;
-        }
-        body{
-            background-color: rgb(245, 241, 222);
-        }
+        /* Header styles */
         .fstpanel {
             background-image: url(map-bg.png);
-            height: 200px;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: -400px;
+            padding: 60px;
+            position: relative;
+            text-align: center;
+            color: #e0e0e0;
+        }
+        .fstpanel h1 {
+            color: #ffa726;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .fstpanel p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+        .faq {
+            background-color: #37474f;
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            margin: 15px;
+            width: 80%;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .faq:hover {
+            transform: translateY(-5px);
+            background-color: #455a64;
+        }
+        h3 {
+            color: #ffcc80;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        /* Footer styles */
+        footer {
+            background: linear-gradient(90deg, #e52e71, #ff8a00);
+            padding: 20px;
             display: flex;
             justify-content: center;
+            gap: 20px;
         }
-        .p2{
-         color:gray
+        .foot {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.3s;
         }
-        div p {
-            margin-left:59px
-            /* font-size:30px */
-        }
-        div h3{
-            margin-left:39px
-        }
-        h3:hover{
-            color:blackt
+        .foot:hover {
+            color: #ffcc80;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="Nav">
-        <ul class="ul">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact1.html">Contact</a></li>
             <li><a href="work.html">Works</a></li>
             <li><a href="features.html">Features</a></li>
         </ul>
-
     </nav>
-        <div class="fstpanel">
-            <h1 class="hd">FAQ</h1>
-            <p class="para">This FAQ page addresses common user inquiries, providing clear and concise responses.
-            </p>
-     </div>
-     <div>
-        <h3>General</h3>
-        <p class="p">
-            What is HelpMe?
-        </p>
-        <p class="p2" >
-            HelpMe is a community-driven platform connecting citizens with local authorities to report and resolve issues.
-        </p> 
-        <p class="p">
-            How do I report an issue?
-        </p>
-        <p class="p2" >
-            Click the "Create A Deployment" button, fill out the form, and submit.
-        </p> 
-        <p class="p">
-            What types of issues can I report?
-        </p>
-        <p class="p2" >
-            Report infrastructure, environmental, or other concerns affecting your community.
-        </p> <h3>Account And Login</h3>
-        <p class="p">
-            Do I need an account to report an issue?
-        </p>
-        <p class="p2" >
-           No, It is not necessary to register with account to report an issue
-        </p><h3>Reporting And Resolution</h3><p class="p">
-            What happens after I report an issue?
-        </p>
-        <p class="p2" >
-            Your report is sent to local authorities for review and resolution.
-        </p><p class="p">
-            How long does resolution take?
-        </p>
-        <p class="p2" >
-            Timeframes vary depending on issue complexity and authority response.
-        </p><h3>Technical</h3><p class="p">
-            Is HelpMe mobile-friendly?
-        </p>
-        <p class="p2" >
-            Yes, our platform is optimized for all devices.
-        </p><p class="p">
-            What browsers are supported?
-        </p>
-        <p class="p2" >
-            HelpMe supports modern browsers (Chrome, Firefox, Safari, Edge).
-        </p><h3>Security And Privacy</h3><p class="p"> 
-            Is my data secure?
-        </p>
-        <p class="p2" >
-            HelpMe prioritizes data encryption and secure storage.
-        </p><p class="p">
-            How do you use my information?
-        </p>
-        <p class="p2" >
-            Review our Privacy Policy for details.
-        </p><h3>Contact And Support</h3><p class="p">
-            How do I contact HelpMe support?
-        </p>
-        <p class="p2" >
-            Email mailto:support@helpme.com 
-        </p>
-     </div>
+
+    <!-- Background Image and Main Heading -->
+    <div class="fstpanel">
+        <h1>FAQ</h1>
+        <p>This FAQ page addresses common user inquiries, providing clear and concise responses.</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-container">
+        <div class="faq">
+            <h3>General</h3>
+            <p><strong>What is HelpMe?</strong><br>HelpMe is a community-driven platform connecting citizens with local authorities to report and resolve issues.</p>
+            <p><strong>How do I report an issue?</strong><br>Click the "Create A Deployment" button, fill out the form, and submit.</p>
+            <p><strong>What types of issues can I report?</strong><br>Report infrastructure, environmental, or other concerns affecting your community.</p>
+        </div>
+        <div class="faq">
+            <h3>Account And Login</h3>
+            <p><strong>Do I need an account to report an issue?</strong><br>No, it is not necessary to register with an account to report an issue.</p>
+        </div>
+        <div class="faq">
+            <h3>Reporting And Resolution</h3>
+            <p><strong>What happens after I report an issue?</strong><br>Your report is sent to local authorities for review and resolution.</p>
+            <p><strong>How long does resolution take?</strong><br>Timeframes vary depending on issue complexity and authority response.</p>
+        </div>
+        <div class="faq">
+            <h3>Technical</h3>
+            <p><strong>Is HelpMe mobile-friendly?</strong><br>Yes, our platform is optimized for all devices.</p>
+            <p><strong>What browsers are supported?</strong><br>HelpMe supports modern browsers (Chrome, Firefox, Safari, Edge).</p>
+        </div>
+        <div class="faq">
+            <h3>Security And Privacy</h3>
+            <p><strong>Is my data secure?</strong><br>HelpMe prioritizes data encryption and secure storage.</p>
+            <p><strong>How do you use my information?</strong><br>Review our Privacy Policy for details.</p>
+        </div>
+        <div class="faq">
+            <h3>Contact And Support</h3>
+            <p><strong>How do I contact HelpMe support?</strong><br><a href="mailto:helpme919191000@gmail.com" style="color: #ffcc80;">HelpMe Customer Support</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="faq.html" class="foot">FAQ</a>
+        <a href="about.html" class="foot">Our Story</a>
+        <a href="contact1.html" class="foot">Contact Us</a>
+        <a href="work.html" class="foot">Our Works</a>
+        <a href="Credits.html" class="foot">Credits</a>
+    </footer>
 </body>
 </html>

@@ -46,15 +46,6 @@ body{
    /* transition: all ease-in-out 0.2s; */
 }
 
-
-
-
-
-   
-
-
-
-
 .logo img{
    height: 135px;
    width: 135px;
@@ -73,10 +64,13 @@ body{
    margin-top: 50px;
    height: 400px;
    width: 300px;
-   margin: 20px 60px;
+   margin: 20px 30px;
    border-radius: 20px;
    display: grid;
    /* transition: all ease-in-out 3s; */
+}
+.background{
+   
 }
 .prob{
    display: inline-flex;
@@ -84,10 +78,11 @@ body{
    margin-top: 130px;
 }
 hr{
-   width: 80%;
+   width: 50%;
    background-color: darkorange;
    height: 2px;
    border: 0px none ;
+   margin-left: 400px;
 }
 
 /* .Nav {
@@ -184,12 +179,6 @@ a:hover {
     src: url(Insanibc.ttf);
  }
 
-  /* .Nav{display: flex;
- justify-content: flex-start;
- align-items: center;
- margin: -10px;
- padding: 0px;
- background-color: rgba(8, 14, 24, 0.89);
- width: 1520px;} */
-
- 
+ p{
+   color: rgb(159, 144, 144);
+ }
