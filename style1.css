@@ -182,3 +182,9 @@ a:hover {
  p{
    color: rgb(159, 144, 144);
  }
+.bgs{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    
+}
