@@ -12,7 +12,7 @@
    color: white;
    margin: 0px;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) and (min-width:0px){
    .prob {
       display: flex;
       justify-content: center;
@@ -32,7 +32,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-left: -40px;
+      margin-left: 120px;
    }
 }
 
@@ -77,7 +77,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-left: -40px;
+      margin-left: 120px;
 
 
    }
