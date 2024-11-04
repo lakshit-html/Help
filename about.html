@@ -1,262 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=2136, initial-scale=1.0" />
-    <title>About HELP</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-      * {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-      }
-      html, body {
-        height: 100vh;
-        width: 100%;
-        background-color: #121212;
-        color: #e0e0e0;
-        font-family: 'Poppins', sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About HELP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      /* Navbar with gradient */
-      .Nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        background: linear-gradient(90deg, #ff8a00, #e52e71);
-      }
-      
-      ul {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-        padding: 0;
-        margin: 0;
-      }
+    html, body {
+      height: 100vh;
+      width: 100%;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+    }
 
-      ul li a {
-        color: #fff;
-        padding: 10px 20px;
-        font-size: 18px;
-        text-decoration: none;
-        font-weight: 600;
-        border-radius: 6px;
-        transition: background-color 0.3s;
-      }
-      ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.15);
-      }
+    /* Navbar */
+    .Nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+    }
+    
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
 
-      /* Main Heading */
-      h1 {
-        color: #ffa726;
-        font-size: 1.8em;
-        letter-spacing: 0.025em;
-        text-transform: uppercase;
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        margin-top: 30px;
-      }
+    ul li a {
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
 
-      /* Background image with overlay */
-      .fstpanel {
-        background-image: url(map-bg.png);
-        background-size: cover;
-        background-position: center;
-        display: grid;
-        padding: 60px;
-        position: relative;
-      }
-      .fstpanel::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 0;
-      }
-      .fstpanel h1 {
-        position: relative;
-        z-index: 1;
-      }
+    ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
 
-      /* Flex container for text and images */
+    /* Main Heading */
+    h1 {
+      color: #ffa726;
+      font-size: 1.8em;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    /* Background image with overlay */
+    .fstpanel {
+      background-image: url(map-bg.png);
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      padding: 60px;
+      position: relative;
+      text-align: center;
+    }
+    .fstpanel::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+    .fstpanel h1 {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Flex container for text and images */
+    .objects {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Div cards with hover effect */
+    .content-left {
+      flex: 1 1 300px;
+      padding-right: 20px;
+    }
+
+    .divbg {
+      background-color: #37474f;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .divbg:hover {
+      transform: translateY(-10px);
+      background-color: #455a64;
+    }
+
+    h2 {
+      color: #ffcc80;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #b0bec5;
+      line-height: 1.6;
+    }
+
+    /* Images on the Right */
+    .images-right {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .images-right img {
+      border-radius: 10px;
+      width: 100%;
+      height: 250px;
+      max-width: 400px;
+      transition: transform 0.3s, filter 0.3s;
+    }
+
+    .images-right img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #e52e71, #ff8a00);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .foot {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .foot:hover {
+      color: #ffcc80;
+    }
+    
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
       .objects {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-      }
-
-      /* Div cards with hover effect */
-      .content-left {
-        width: 50%;
-        padding-right: 20px;
-      }
-      .divbg {
-        background-color: #37474f;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-        margin-bottom: 20px;
-        transition: transform 0.3s, background-color 0.3s;
-      }
-      .divbg:hover {
-        transform: translateY(-10px);
-        background-color: #455a64;
-      }
-
-      h2 {
-        color: #ffcc80;
-        margin-bottom: 10px;
-      }
-
-      p {
-        color: #b0bec5;
-        line-height: 1.6;
-      }
-
-      /* Image container on the right */
-      .images-right {
-        width: 45%;
-        display: flex;
         flex-direction: column;
-        gap: 20px;
-        position: relative;
-        left: 1000px;
-        bottom: 1050px;
-      }
-      .images-right img {
-        border-radius: 10px;
-        width: 43%;
-        height: 326px;
-        transition: transform 0.3s, filter 0.3s;
-      }
-      .images-right img:hover {
-        transform: scale(1.05);
-        filter: brightness(1.2);
+        align-items: center;
       }
 
-      /* Footer with gradient */
-      footer {
-        background: linear-gradient(90deg, #e52e71, #ff8a00);
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+      .content-left, .images-right {
+        width: 100%;
       }
-      .foot {
-        color: #fff;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 600;
-        transition: color 0.3s;
-      }
-      .foot:hover {
-        color: #ffcc80;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="Nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contactmain.html">Contact</a></li>
-        <li><a href="work.html">Works</a></li>
-        <li><a href="features.html">Features</a></li>
-      </ul>
-    </nav>
-
-    <!-- Background Image and Main Heading -->
-    <div class="fstpanel">
-      <h1>Empowering Communities To Advance Social Change Through Accessible Technology Solutions</h1>
+      ul li a {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+ 
       
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="Nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactmain.html">Contact</a></li>
+      <li><a href="work.html">Works</a></li>
+      <li><a href="features.html">Features</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background Image and Main Heading -->
+  <div class="fstpanel">
+    <h1>Empowering Communities To Advance Social Change Through Accessible Technology Solutions</h1>
+  </div>
+
+  <!-- Main Content Sections -->
+  <div class="objects">
+    <!-- Text Sections on the Left -->
+    <div class="content-left">
+      <div class="divbg">
+        <h2>Introduction:</h2>
+        <p>Welcome to [HELP], a revolutionary platform connecting citizens with municipal corporations to address local issues efficiently...</p>
+      </div>
+      <div class="divbg">
+        <h2>Our Vision:</h2>
+        <p>A nation where every community thrives, and every citizen's voice is heard...</p>
+      </div>
+      <div class="divbg">
+        <h2>Our Objectives:</h2>
+        <p>1. Provide a user-friendly platform for citizens to report municipal-related issues...</p>
+      </div>
+      <div class="divbg">
+        <h2>How We Work:</h2>
+        <p>1. Citizens report issues through our Deployment form...</p>
+      </div>
+      <div class="divbg">
+        <h2>Our Values:</h2>
+        <p>1. Citizen-centric approach<br>2. Transparency and accountability...</p>
+      </div>
+      <h2>Meet Our Team:</h2>
     </div>
 
-    <!-- Main Content Sections with Text on Left and Images on Right -->
-    <div class="objects">
-      <!-- Text Sections on the Left -->
-      <div class="content-left">
-        <div class="divbg">
-          <h2>Introduction:</h2>
-          <p>
-            Welcome to [HELP], a revolutionary platform connecting citizens with
-            municipal corporations to address local issues efficiently. Our
-            mission is to bridge the gap between citizens and municipal
-            authorities, ensuring seamless communication and effective
-            problem-solving.
-          </p>
-        </div>
-
-        <div class="divbg">
-          <h2>Our Vision:</h2>
-          <p>
-            A nation where every community thrives, and every citizen's voice is
-            heard. We envision a future where municipal services are accessible,
-            efficient, and transparent, fostering vibrant, sustainable, and
-            livable cities.
-          </p>
-        </div>
-
-        <div class="divbg">
-          <h2>Our Objectives:</h2>
-          <p>
-            1. Provide a user-friendly platform for citizens to report
-            municipal-related issues. <br />
-            2. Ensure timely resolution of reported issues through collaboration
-            with municipal authorities. <br />
-            3. Promote transparency, accountability, and civic engagement. <br />
-            4. Empower citizens to take ownership of community development.
-          </p>
-        </div>
-        <div class="divbg">
-          <h2>How We Work:</h2>
-          <p>
-            1. Citizens report issues through our Deployment form.
-            2. Our team verifies and categorizes reports.
-            3. Municipal authorities receive notified reports and respond with updates.
-            4. Citizens track progress and provide feedback.
-             </p>
-        </div>
-        <div class="divbg">
-          <h2>Our Values:</h2>
-          <p>
-            1. Citizen-centric approach
-2. Transparency and accountability
-3. Collaboration and partnerships
-4. Innovation and continuous improvement
-5. Inclusivity and social responsibility
-             </p>
-        </div>
-          <h2>Meet Our Team:</h2>
-         
-        </div>
-      </div>
-
-      <!-- Images on the Right -->
-      <div class="images-right">
-        <img src="360_F_598856174_OjkYL8BbXuYxRmHrV37SOUabxeJxQucq.jpg" alt="Image 1" />
-        <img src="istockphoto-1093177328-612x612.jpg" alt="Image 2" />
-        <img src="images2.jpg" alt="Image 3" />
-      </div>
+    <!-- Images on the Right -->
+    <div class="images-right">
+      <img src="360_F_598856174_OjkYL8BbXuYxRmHrV37SOUabxeJxQucq.jpg" alt="Image 1" />
+      <img src="istockphoto-1093177328-612x612.jpg" alt="Image 2" />
+      <img src="images2.jpg" alt="Image 3" />
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-      <a href="faq.html" class="foot">FAQ</a>
-      <a href="about.html" class="foot">Our Story</a>
-      <a href="contactmain.html" class="foot">Contact Us</a>
-      <a href="features.html" class="foot">Our Works</a>
-      <a href="Credits.html" class="foot">Credits</a>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <a href="faq.html" class="foot">FAQ</a>
+    <a href="about.html" class="foot">Our Story</a>
+    <a href="contactmain.html" class="foot">Contact Us</a>
+    <a href="features.html" class="foot">Our Works</a>
+    <a href="Credits.html" class="foot">Credits</a>
+  </footer>
+</body>
 </html>
