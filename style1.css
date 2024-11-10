@@ -4,18 +4,150 @@
 
 }
 body{
-   min-height: 100vh;
+   min-height: 115vh;
    background-image: url(bac.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 
+}
+.typewriter{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 40px;
+   margin-left: 20px;
+   color: #fff;
+}
+.typewriter :is(h1) {
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: 750;
+   font-size: 3rem;
+   margin-inline: auto;
+   font-weight: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   border-right: 1px solid;
+   animation: typing 1.8s steps(18) forwards,
+   blink 1s step-end infinite;
+}
+.Orange{
+   color: darkorange;
+}
+.wrapper{
+   display: inline-flex;
+}
+.wrapper .static-text{
+   font-size: 28px;
+   font-weight: 400;
+   color: #fff;
+}
+.wrapper .dynamic-texts{
+   margin-left: 15px;
+   height: 28px;
+   line-height: 28px;
+   margin-top: 4px;
+   overflow: hidden;
+}
+.dynamic-texts li {
+   position: relative;
+   top: 3px;
+ list-style: none;
+ font-weight: 600;
+ font-size: 19px;
+ color: darkorange;
+ animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+   100%{
+      top: -112px;
+
+   }
+}
+.dynamic-texts li span{
+   position: relative;
+}
+.dynamic-texts li span::after {
+   content: "";
+   background-color: rgb(101, 63,   174);
+   position: absolute;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   border-left: 2px solid darkorange;
+   animation: typing1 1.5s steps(19) infinite;
+
+
+}
+
+@keyframes typing1 {
+   100%{
+      left: 100%;
+      margin: 0 -35px 0 35px  ;
+   }
+}
+@keyframes typing {
+   from{
+      width: 0;
+
+   }
+   to{
+      width: 100%;
+      border: none;
+
+         
+   }
+
+}
+@keyframes blink {
+   50%{
+      border-color: transparent;
+   }
+   100%{
+      border-color: transparent;
+   }
+}
+@font-face {
+   font-family:Cart;
+   src: url(Insanibc.ttf);
+}
+
+
+.box{
+   height: 26px;
+   width: 400px;
+   display: flex;
+   cursor: pointer;
+   padding: 7px 15px;
+   background-color: #fff;
+   border-radius: 30px;
+   align-items: center;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+   margin-right: auto;
+}
+.box a {
+   padding: 0px 10px;
+}
+
+.box input{
+   width: 100%;
+   outline: none;
+   border: none;
+   font-weight: 500;
+   background: transparent;
+   transition:0.8s ease-in-out all none;
+}
+.box a .fas{
+   color: #1daf;
+   font: 18px;
 }
 
 nav{
    background-color: #ffffffd0;
    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+   transition:0.8s ease-in-out all none;
+
 
 }
 nav ul {
@@ -28,7 +160,8 @@ nav ul {
 
 nav li {
    height: 50px;
-    display: flex;
+   transition:0.8s ease-in-out all none;
+
 }
 nav a {
    height: 100%;
@@ -37,6 +170,8 @@ nav a {
    display: flex;
    align-items: center;
    color: black;
+   transition:0.8s ease-in-out all none;
+
 
 }
 nav a:hover{
@@ -44,6 +179,8 @@ nav a:hover{
 }
 nav li:first-child{
    margin-right: auto;
+   font-weight: 500;
+   font-size: 20px;
 }
 .sidebar{
    position: fixed;
@@ -60,6 +197,9 @@ nav li:first-child{
    justify-content: flex-start;
    backdrop-filter: blur(10px);
 }
+#Menu{
+   display: none;
+}
 .sidebar li {
    width: 100%;
 }
@@ -68,7 +208,78 @@ nav li:first-child{
 
 }
 @media(max-width:600px){
-   .hideOnMobile{
-      display: none;
+   #Menu{
+      display: flex;
    }
-}  
+} 
+main{
+   display: flex;
+   height: 100vh;
+   width: 100%;
+   margin: 0px;
+   align-content: center;
+   justify-content: center;
+} 
+.btn{
+   display: flex;
+   height: 30px;
+   width: 300px;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+}
+.btn a{
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   display: flex;
+   width: 80%;
+   font-size: 16px;
+   padding: 16px 15px 15px;
+   background:#1f883d ;
+   text-decoration: none;
+   color: #fff;
+   border-radius: 5px;
+   font-weight: 500;
+   box-shadow: 3px 3px 20px #1f883d;
+   position: relative;
+   top: 125px;
+   left: -585px;
+}
+.feedback{
+   position: relative;
+   top: 188px;
+   left: -866px;
+   gap: 20px;
+   color: #fff;
+
+}
+.feedback a{
+   text-decoration: none;
+   color: #000000;
+   font-weight: 500;
+}
+.fa-brands{
+   font-size: 23px;
+   margin-top: 20px;
+   padding: 0px 5px;
+   color: #000000;
+}
+.snap-images{
+   display: flex;
+   height: 300px;
+   gap: 20px;
+   width: 300px;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   position: absolute;
+}
+.snap .img{
+   scroll-snap-align: start;
+   box-sizing: border-box;
+   padding: 20px 30px;
+   flex-shrink: 0;
+   width: 300px;
+   background-color: #fff;
+   border-radius: 14px;
+}

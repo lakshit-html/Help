@@ -14,44 +14,83 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      height: 100vh;
-      width: 100%;
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: 'Poppins', sans-serif;
-    }
+
+      body{
+   min-height: 100vh;
+   background-image: url(bac.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 
     /* Navbar */
-    .Nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      background: linear-gradient(90deg, #ff8a00, #e52e71);
-    }
-    
-    ul {
-      list-style-type: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
+    nav{
+   background-color: #ffffffd0;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 
-    ul li a {
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 18px;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 6px;
-      transition: background-color 0.3s;
-    }
+}
+nav ul {
+   width: 100%;
+   list-style-type: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
 
-    ul li a:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-    }
+nav li {
+   height: 50px;
+}
+nav a {
+   height: 100%;
+   padding: 0 30px ;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: black;
+
+}
+nav a:hover{
+   background-color: #f0f0f0;
+}
+nav li:first-child{
+   margin-right: auto;
+}
+.sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   background-color: #ffffff34;
+   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   backdrop-filter: blur(10px);
+}
+#Menu{
+   display: none;
+}
+.sidebar li {
+   width: 100%;
+}
+.sidebar a {
+   width: 100%;
+
+}
+@media(max-width:600px){
+   #Menu{
+      display: flex;
+   }
+   .hideOnMobile{
+    display: none;
+   }
+} 
 
     /* Main Heading */
     h1 {
@@ -65,29 +104,7 @@
     }
 
     /* Background image with overlay */
-    .fstpanel {
-      background-image: url(map-bg.png);
-      background-size: cover;
-      background-position: center;
-      display: grid;
-      padding: 60px;
-      position: relative;
-      text-align: center;
-    }
-    .fstpanel::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.2);
-      z-index: 0;
-    }
-    .fstpanel h1 {
-      position: relative;
-      z-index: 1;
-    }
+
 
     /* Flex container for text and images */
     .objects {
@@ -105,7 +122,8 @@
     }
 
     .divbg {
-      background-color: #37474f;
+      background-color: rgba(139, 119, 179, 0.473);
+      backdrop-filter: blur(5px);
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -115,7 +133,10 @@
 
     .divbg:hover {
       transform: translateY(-10px);
-      background-color: #455a64;
+      background-color: rgba(248, 248, 255, 0.562);
+      h2{
+        color:#ff8800
+      }
     }
 
     h2 {
@@ -124,7 +145,8 @@
     }
 
     p {
-      color: #b0bec5;
+      /* color: #b0bec5; */
+      color: black;
       line-height: 1.6;
     }
 
@@ -181,32 +203,30 @@
       .content-left, .images-right {
         width: 100%;
       }
-      ul li a {
-    color: #fff;
-    padding: 10px 0px;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-}
- 
-      
     }
   </style>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="Nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contactmain.html">Contact</a></li>
-      <li><a href="work.html">Works</a></li>
-      <li><a href="features.html">Features</a></li>
-    </ul>
-  </nav>
+    <nav> 
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/multiply.png" alt="multiply"/></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactmain.html">Contact</a></li>
+        <li><a href="features.html">Features</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">HelpMe</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="contactmain.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="features.html">Features</a></li>
+        <li onclick=showSidebar() id="Menu"><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
+      </ul>
+    </nav>
+
 
   <!-- Background Image and Main Heading -->
   <div class="fstpanel">
@@ -256,5 +276,15 @@
     <a href="features.html" class="foot">Our Works</a>
     <a href="Credits.html" class="foot">Credits</a>
   </footer>
+  <script>
+    function showSidebar() {
+   const sidebar =  document.querySelector(".sidebar"); 
+      sidebar.style.display = "flex"
+    }
+    function hideSidebar() {
+   const sidebar =  document.querySelector(".sidebar"); 
+      sidebar.style.display = "none"
+    }
+  </script>
 </body>
 </html>

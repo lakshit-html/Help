@@ -13,7 +13,7 @@
     <title>HELP-Crowdsourching Solutions to Empower Communities</title>
 </head>
 <body>
-      <nav>
+      <nav> 
         <ul class="sidebar">
           <li onclick=hideSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/multiply.png" alt="multiply"/></a></li>
           <li><a href="index.html">Home</a></li>
@@ -23,13 +23,63 @@
         </ul>
         <ul>
           <li><a href="#">HelpMe</a></li>
-          <li class="hideOnMobile"><a href="#">Home</a></li>
-          <li class="hideOnMobile"><a href="#">About</a></li>
-          <li class="hideOnMobile"><a href="#">Contact</a></li>
-          <li class="hideOnMobile"><a href="#">Features</a></li>
-          <li onclick=showSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
+          <div class="box">
+            <a href="">
+              <i class="fas fa-search"></i>
+            </a>
+            <input type="text" name="" id="" placeholder="Search....">
+          </div>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="about.html">About</a></li>
+          <li class="hideOnMobile"><a href="contactmain.html">Contact</a></li>
+          <li class="hideOnMobile"><a href="features.html">Features</a></li>
+          <li onclick=showSidebar() id="Menu"><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
         </ul>
       </nav>
+      <main>
+        <div class="typewriter">
+          <div>
+            <h1>
+             Welcome To <c class="Orange">Help Me</c>
+            </h1>
+            <div class="wrapper">
+              <div class="static-text">Crowdsourching Solutions to </div>
+              <ul class="dynamic-texts">
+                <li><span>Empower Communities</span></li>
+                <li><span>Empower Societies</span></li>
+                <li><span>Empower Cities</span></li>
+                <li><span>Empower Peoples</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn">
+           <a href="#">Create a Deployment</a>  
+          </div>
+          <div class="feedback">
+            <a href="#">Love the site? Spread the word!</a><br>
+            <i class="fa-brands fa-twitter "></i>
+            <i class="fa-brands fa-facebook " ></i>
+            <i class="fa-brands fa-instagram "></i>
+            <i class="fa-brands fa-snapchat "></i>
+            <i class="fa-brands fa-youtube "></i>
+          </div>
+        </div>
+      </main>
+      <div class="snap-images">
+        <img class=".img"src="sdg1.png" alt="">
+        <img class=".img"src="sdg2.png" alt="">
+        <img class=".img"src="sdg3.png" alt="">
+        <img class=".img"src="sdg4.png" alt="">
+        <img class=".img"src="sdg5.png" alt="">
+        <img class=".img"src="sdg6.png" alt="">
+        <img class=".img"src="sdg7.png" alt="">
+        <img class=".img"src="sdg9.png" alt="">
+        <img class=".img"src="sdg10.png" alt="">
+        <img class=".img"src="sdg11.png" alt="">
+        <img class=".img"src="sdg13.png" alt="">
+        <img class=".img"src="sdg14.png" alt="">
+        <img class=".img"src="sdg15.png" alt="">
+      </div>
       <script>
         function showSidebar() {
        const sidebar =  document.querySelector(".sidebar"); 
