@@ -209,10 +209,11 @@ body {
    }
    .sidebar li {
       width: 100%;
+
    }
    .sidebar a {
       width: 100%;
-   
+      
    }
    @media(max-width:600px){
       #Menu{
@@ -283,6 +284,9 @@ main {
    margin-top: 20px;
    padding: 0px 5px;
    color: #000000;
+}
+.fa-brands:hover{
+   color: blue;
 }
 /* .contents{
    display: flex;
@@ -469,4 +473,51 @@ main {
    flex-direction: row;
    width: fit-content;
    margin-top: 1000px;
+}
+footer{
+   display: grid;
+   position: absolute;
+   margin-top: 100%;
+   height: 50vh;
+   width: 100vw;
+   background-color: rgb(242, 225, 139);
+}
+footer img{
+   height: 200px;
+   width: 550px;
+   margin-left: -40PX;
+}
+footer .logo .logo-text{
+   font-size: 20px;
+}
+footer .logo{
+   display: grid;
+   place-items: center;
+   place-content: center;
+   place-self: start;
+   height: fit-content;
+   width: fit-content;
+}
+footer .buttons{
+   display: grid;
+   place-self: center;
+   align-self: center;
+   justify-self: center;
+   height: fit-content;
+   width: fit-content  ;
+   margin-left: -300px;
+   align-content: center;
+   margin-bottom: 400px;
+   margin-top: -150px;
+}
+
+.buttons ul li{
+   list-style-type: none;
+   line-height: 2.5;
+   color: black;
+}
+.buttons a {
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
 }
