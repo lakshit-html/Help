@@ -367,10 +367,53 @@ main {
    background-color: rgb(255, 255, 255);
    flex-direction: column;
    position: absolute;
-   margin-top: 950px;
    height: 60%;
-   width: 99%;
-   margin-left: 10px;
+   width: 97%;
+   margin-left: 30px;
+   line-height: 1.5;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow: 0 0 7px black;
+   border-radius: 20px;
+   justify-content: center;
+   justify-items: space-evenly;
+   align-items: center;
+   font-weight: 500;
+   align-items: stretch;
+   flex-wrap: wrap;
+
+   
+}
+.case-study:nth-child(2){
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   flex-direction: column;
+   position: absolute;
+   margin-top: 30%;
+   height: 60%;
+   width: 97%;
+   margin-left: 30px;
+   line-height: 1.5;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow: 0 0 7px black;
+   border-radius: 20px;
+   justify-content: center;
+   justify-items: space-evenly;
+   align-items: center;
+   font-weight: 500;
+   align-items: stretch;
+   flex-wrap: wrap;
+
+   
+}
+.case-study:nth-child(3){
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   flex-direction: column;
+   position: absolute;
+   margin-top: 60%;
+   height: 60%;
+   width: 97%;
+   margin-left: 30px;
    line-height: 1.5;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    box-shadow: 0 0 7px black;
@@ -415,4 +458,11 @@ main {
    align-self: stretch;
    padding: 20px;
    background-color: transparent;
+}
+.case{
+   display: flex;
+   height: fit-content;
+   flex-direction: column;
+   width: fit-content;
+   margin-top: 1000px;
 }
