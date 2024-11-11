@@ -1,120 +1,131 @@
-*{
+/* Reset default margin and padding */
+* {
    margin: 0;
    padding: 0;
-
 }
-body{
+
+body {
    min-height: 115vh;
    background-image: url(bac.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-
 }
-.typewriter{
+
+/* Style for the typewriter effect */
+.typewriter {
    display: flex;
    justify-content: flex-start;
    margin-top: 40px;
    margin-left: 20px;
    color: #fff;
+   height: fit-content;
 }
-.typewriter :is(h1) {
-   font-family:Arial, Helvetica, sans-serif;
+
+.typewriter h1 {
+   font-family: Arial, Helvetica, sans-serif;
    font-weight: 750;
    font-size: 3rem;
    margin-inline: auto;
-   font-weight: 0;
    overflow: hidden;
    white-space: nowrap;
    border-right: 1px solid;
-   animation: typing 1.8s steps(18) forwards,
-   blink 1s step-end infinite;
+   animation: typing 1.8s steps(18) forwards, blink 1s step-end infinite;
 }
-.Orange{
+.typewriter .tyw {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 750;
+   font-size: 1.5rem;
+   margin-inline: auto;
+   overflow: hidden;
+   white-space: nowrap;
+   border-right: 1px solid;
+   animation: typing 1.8s steps(18) forwards, blink 1s step-end infinite;
+}
+
+.Orange {
    color: darkorange;
 }
-.wrapper{
+
+/* Wrapper for dynamic text
+.wrapper {
    display: inline-flex;
 }
-.wrapper .static-text{
+
+.wrapper .static-text {
    font-size: 28px;
    font-weight: 400;
    color: #fff;
 }
-.wrapper .dynamic-texts{
+
+.wrapper .dynamic-texts {
    margin-left: 15px;
    height: 28px;
    line-height: 28px;
    margin-top: 4px;
    overflow: hidden;
 }
+
 .dynamic-texts li {
    position: relative;
    top: 3px;
- list-style: none;
- font-weight: 600;
- font-size: 19px;
- color: darkorange;
- animation: slide 6s steps(4) infinite;
+   list-style: none;
+   font-weight: 600;
+   font-size: 19px;
+   color: darkorange;
+   animation: slide 6s steps(4) infinite;
 }
-@keyframes slide {
-   100%{
-      top: -112px;
 
+@keyframes slide {
+   100% {
+       top: -112px;
    }
 }
-.dynamic-texts li span{
+
+.dynamic-texts li span {
    position: relative;
 }
+
 .dynamic-texts li span::after {
    content: "";
-   background-color: rgb(101, 63,   174);
+   background-color: rgb(101, 63, 174);
    position: absolute;
    left: 0;
    height: 100%;
    width: 100%;
    border-left: 2px solid darkorange;
    animation: typing1 1.5s steps(19) infinite;
-
-
 }
 
 @keyframes typing1 {
-   100%{
-      left: 100%;
-      margin: 0 -35px 0 35px  ;
+   100% {
+       left: 100%;
+       margin: 0 -35px 0 35px;
    }
-}
+} */
+
 @keyframes typing {
-   from{
-      width: 0;
-
+   from {
+       width: 0;
    }
-   to{
-      width: 100%;
-      border: none;
-
-         
+   to {
+       width: 100%;
+       border: none;
    }
-
 }
+
 @keyframes blink {
-   50%{
-      border-color: transparent;
+   50% {
+       border-color: transparent;
    }
-   100%{
-      border-color: transparent;
+   100% {
+       border-color: transparent;
    }
 }
-@font-face {
-   font-family:Cart;
-   src: url(Insanibc.ttf);
-}
 
-
-.box{
+/* Search bar styles */
+.box {
    height: 26px;
    width: 400px;
    display: flex;
@@ -126,101 +137,104 @@ body{
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
    margin-right: auto;
 }
+
 .box a {
    padding: 0px 10px;
 }
 
-.box input{
+.box input {
    width: 100%;
    outline: none;
    border: none;
    font-weight: 500;
    background: transparent;
-   transition:0.8s ease-in-out all none;
+   transition: 0.8s ease-in-out all none;
 }
-.box a .fas{
+
+.box a .fas {
    color: #1daf;
    font: 18px;
 }
 
-nav{
-   background-color: #ffffffd0;
-   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-   transition:0.8s ease-in-out all none;
-
-
-}
-nav ul {
-   width: 100%;
-   list-style-type: none;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-}
-
-nav li {
-   height: 50px;
-   transition:0.8s ease-in-out all none;
-
-}
-nav a {
-   height: 100%;
-   padding: 0 30px ;
-   text-decoration: none;
-   display: flex;
-   align-items: center;
-   color: black;
-   transition:0.8s ease-in-out all none;
-
-
-}
-nav a:hover{
-   background-color: #f0f0f0;
-}
-nav li:first-child{
-   margin-right: auto;
-   font-weight: 500;
-   font-size: 20px;
-}
-.sidebar{
-   position: fixed;
-   top: 0;
-   right: 0;
-   height: 100vh;
-   width: 250px;
-   z-index: 999;
-   background-color: #ffffff69;
-   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-   display: none;
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: flex-start;
-   backdrop-filter: blur(10px);
-}
-#Menu{
-   display: none;
-}
-.sidebar li {
-   width: 100%;
-}
-.sidebar a {
-   width: 100%;
-
-}
-@media(max-width:600px){
-   #Menu{
-      display: flex;
+/* Navbar styles */
+    /* Navbar */
+    nav{
+      background-color: #ffffffd0;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+   
    }
-} 
-main{
+   nav ul {
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   
+   nav li {
+      height: 50px;
+   }
+   nav a {
+      height: 100%;
+      padding: 0 30px ;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+   
+   }
+   nav a:hover{
+      background-color: #f0f0f0;
+   }
+   nav li:first-child{
+      margin-right: auto;
+   }
+   .sidebar{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 250px;
+      z-index: 999;
+      background-color: #ffffff34;
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      backdrop-filter: blur(10px);
+   }
+   #Menu{
+      display: none;
+   }
+   .sidebar li {
+      width: 100%;
+   }
+   .sidebar a {
+      width: 100%;
+   
+   }
+   @media(max-width:600px){
+      #Menu{
+         display: flex;
+      }
+      .hideOnMobile{
+       display: none;
+      }
+   } 
+
+/* Main content and button styles */
+main {
    display: flex;
-   height: 100vh;
+   height: fit-content;
    width: 100%;
    margin: 0px;
    align-content: center;
    justify-content: center;
-} 
-.btn{
+}
+
+/* Button styling */
+.btn {
    display: flex;
    height: 30px;
    width: 300px;
@@ -228,7 +242,8 @@ main{
    justify-items: center;
    align-items: center;
 }
-.btn a{
+
+.btn a {
    align-items: center;
    justify-content: center;
    justify-items: center;
@@ -236,50 +251,168 @@ main{
    width: 80%;
    font-size: 16px;
    padding: 16px 15px 15px;
-   background:#1f883d ;
+   background: #1f883d;
    text-decoration: none;
    color: #fff;
    border-radius: 5px;
    font-weight: 500;
    box-shadow: 3px 3px 20px #1f883d;
    position: relative;
-   top: 125px;
-   left: -585px;
+   top: 110px;
+   left: -619px;
 }
-.feedback{
+
+/* Social media feedback section */
+.feedback {
    position: relative;
    top: 188px;
-   left: -866px;
+   left: -900px;
    gap: 20px;
    color: #fff;
-
+   width: fit-content;
 }
-.feedback a{
+
+.feedback a {
    text-decoration: none;
    color: #000000;
    font-weight: 500;
 }
-.fa-brands{
+
+.fa-brands {
    font-size: 23px;
    margin-top: 20px;
    padding: 0px 5px;
    color: #000000;
 }
-.snap-images{
+/* .contents{
    display: flex;
-   height: 300px;
-   gap: 20px;
-   width: 300px;
-   overflow-x: scroll;
-   scroll-snap-type: x mandatory;
+   overflow: hidden;
+} */
+
+/* Image scrolling container */
+.snap-images-container {
+   margin-top: 570px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: absolute;
+   overflow: hidden;
+   width: 94%; /* Adjust based on your design */
+   margin-left: 50px;
+
 }
-.snap .img{
-   scroll-snap-align: start;
-   box-sizing: border-box;
-   padding: 20px 30px;
+
+.snap-images {
+   display: flex;
+   gap: 20px;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+}
+
+.snap-images .img {
    flex-shrink: 0;
    width: 300px;
-   background-color: #fff;
+   scroll-snap-align: start;
    border-radius: 14px;
+}
+
+/* Navigation buttons (left and right arrows) */
+.arrow-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   font-size: 24px;
+   cursor: pointer;
+   z-index: 2;
+   border-radius: 50%;
+}
+
+.arrow-btn.left {
+   left: 10px;
+}
+
+.arrow-btn.right {
+   right: 10px;
+}
+
+.arrow-btn:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+
+   *{
+      display: none;
+   }
+
+}
+.mockup{
+   height: 600px;
+   width: 500px;
+}
+.content{
+   display: flex;
+   height: fit-content;
+   width: fit-content;
+   flex-direction: column;
+}
+
+
+.case-study{
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   flex-direction: column;
+   position: absolute;
+   margin-top: 950px;
+   height: 60%;
+   width: 99%;
+   margin-left: 10px;
+   line-height: 1.5;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow: 0 0 7px black;
+   border-radius: 20px;
+   justify-content: center;
+   justify-items: space-evenly;
+   align-items: center;
+   font-weight: 500;
+   align-items: stretch;
+   flex-wrap: wrap;
+
+   
+}
+.case-study h2{
+   font-size: 40px;
+   margin-bottom: 10px;
+   align-self: center;
+}
+.case-study::after{
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-image:radial-gradient(circle farthest-corner at 10% 20%,rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2%) ;
+   filter: blur(15px);
+   z-index: -1;
+   position: absolute;
+   left: 0;
+   top: 0;
+
+
+}
+.case-study hr{
+   width: 50%;
+   align-self: CENTER;
+   margin-bottom: 10px;
+   height: 4px;
+   background-color: goldenrod;
+   border: none;
+}
+.case-study p {
+   font-size: 20px;
+   align-self: stretch;
+   padding: 20px;
+   background-color: transparent;
 }

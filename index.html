@@ -7,42 +7,41 @@
     content="education on water conservation, road safety tips, electricity saving techniques, infrastructure awareness, public resources education, sustainable water management, transportation safety, energy conservation, community resources, environmental awareness">
   <meta name="author" content="John Doe">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="website icon" type="png" href="11BG.png">
     <meta name="viewport" content="width=1000px, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HELP-Crowdsourching Solutions to Empower Communities</title>
 </head>
 <body>
-      <nav> 
-        <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/multiply.png" alt="multiply"/></a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contactmain.html">Contact</a></li>
-          <li><a href="features.html">Features</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">HelpMe</a></li>
-          <div class="box">
-            <a href="">
-              <i class="fas fa-search"></i>
-            </a>
-            <input type="text" name="" id="" placeholder="Search....">
-          </div>
-          <li class="hideOnMobile"><a href="index.html">Home</a></li>
-          <li class="hideOnMobile"><a href="about.html">About</a></li>
-          <li class="hideOnMobile"><a href="contactmain.html">Contact</a></li>
-          <li class="hideOnMobile"><a href="features.html">Features</a></li>
-          <li onclick=showSidebar() id="Menu"><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
-        </ul>
-      </nav>
+  <nav> 
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/multiply.png" alt="multiply"/></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactmain.html">Contact</a></li>
+      <li><a href="features.html">Features</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">HelpMe</a></li>
+      <li ><a class="hideOnMobile" href="index.html">Home</a></li>
+      <li ><a class="hideOnMobile" href="about.html">About</a></li>
+      <li ><a class="hideOnMobile" href="contactmain.html">Contact</a></li>
+      <li ><a class="hideOnMobile" href="features.html">Features</a></li>
+      <li onclick=showSidebar() id="Menu"><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
+    </ul>
+  </nav>
       <main>
         <div class="typewriter">
-          <div>
+          <div class="content">
             <h1>
              Welcome To <c class="Orange">Help Me</c>
             </h1>
-            <div class="wrapper">
+            <h1 class="tyw">
+              Crowdsourching Solutions to <c class="Orange">Empower Communities</c>
+             </h1>
+            
+            <!-- <div class="wrapper">
               <div class="static-text">Crowdsourching Solutions to </div>
               <ul class="dynamic-texts">
                 <li><span>Empower Communities</span></li>
@@ -50,12 +49,15 @@
                 <li><span>Empower Cities</span></li>
                 <li><span>Empower Peoples</span></li>
               </ul>
-            </div>
+            </div> -->
           </div>
           <div class="btn">
            <a href="#">Create a Deployment</a>  
           </div>
-          <div class="feedback">
+          <div>
+            <img src="untitled" alt="">
+          </div>
+         <div class="feedback">
             <a href="#">Love the site? Spread the word!</a><br>
             <i class="fa-brands fa-twitter "></i>
             <i class="fa-brands fa-facebook " ></i>
@@ -65,21 +67,32 @@
           </div>
         </div>
       </main>
-      <div class="snap-images">
-        <img class=".img"src="sdg1.png" alt="">
-        <img class=".img"src="sdg2.png" alt="">
-        <img class=".img"src="sdg3.png" alt="">
-        <img class=".img"src="sdg4.png" alt="">
-        <img class=".img"src="sdg5.png" alt="">
-        <img class=".img"src="sdg6.png" alt="">
-        <img class=".img"src="sdg7.png" alt="">
-        <img class=".img"src="sdg9.png" alt="">
-        <img class=".img"src="sdg10.png" alt="">
-        <img class=".img"src="sdg11.png" alt="">
-        <img class=".img"src="sdg13.png" alt="">
-        <img class=".img"src="sdg14.png" alt="">
-        <img class=".img"src="sdg15.png" alt="">
-      </div>
+      <div class="snap-images-container">
+        <button class="arrow-btn left" onclick="changeImage(-1)">&lt;</button>
+        <div class="snap-images">
+            <img class="img" src="sdg1.png" alt="">
+            <img class="img" src="sdg2.png" alt="">
+            <img class="img" src="sdg3.png" alt="">
+            <img class="img" src="sdg4.png" alt="">
+            <img class="img" src="sdg5.png" alt="">
+            <img class="img" src="sdg6.png" alt="">
+            <img class="img" src="sdg7.png" alt="">
+            <img class="img" src="sdg9.png" alt="">
+            <img class="img" src="sdg10.png" alt="">
+            <img class="img" src="sdg11.png" alt="">
+            <img class="img" src="sdg13.png" alt="">
+            <img class="img" src="sdg14.png" alt="">
+            <img class="img" src="sdg15.png" alt="">
+        </div>
+        <button class="arrow-btn right" onclick="changeImage(1)">&gt;</button>
+    </div>
+    <div class="case-study">
+      <h2>Rural Poverty in Punjab: A Case Study of Village ’Shergarh’</h2><hr>
+      <p>This is a case study by Dr Manjit Sharma, about poverty in a village named Shergarh in the Bhatinda district of Punjab. Being a relatively better-performing state, all the 15 poorest households that are selected as samples for the research had self-owned houses, almost 3 meals a day etc. But poverty is visible in terms of health, education, family assets etc. The family size of the sample households is also taken understudy to understand the dependency of the family on the earner and the demography of the sample. Assets that are studied for the research are the quality of the houses, that is, availability of kitchen, bathroom, proper drainage system, toilets, handpump, electricity, animals, land owned and private transport. Education level in these households was not very good either for 60% of the households, the family head was illiterate. 40% of children in the family were not going to schools. 53.33% of the households had members addicted to alcohol, smoking or any other substance abuse. He also talks about the type of consumption and uses the calorie method to understand poverty. <br> <br><b>Case Study By:  <br>
+        Dr Manjit  </b></p>
+      
+    </div>
+    
       <script>
         function showSidebar() {
        const sidebar =  document.querySelector(".sidebar"); 
@@ -89,6 +102,23 @@
        const sidebar =  document.querySelector(".sidebar"); 
           sidebar.style.display = "none"
         }
+        let currentIndex = 0;
+const images = document.querySelectorAll('.snap-images .img');
+const totalImages = images.length;
+
+function changeImage(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalImages - 1; // Go to last image
+    } else if (currentIndex >= totalImages) {
+        currentIndex = 0; // Go to first image
+    }
+
+    // Scroll to the current image
+    images[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
       </script>
   </body>
 </html>

@@ -9,17 +9,23 @@
 </head>
 <body>
 
-    <nav class="Nav">
-        <ul class="ul">
-            <li><a class="a" href="index.html">Home</a></li>
-            <li><a class="a" href="about.html">About</a></li>
-            <li><a class="a" href="contactmain.html">Contact</a></li>
-            <li><a class="a" href="work.html">Works</a></li>
-            <li><a class="a" href="features.html">Features</a></li>
-            <li style="background-color: darkorange; border-radius: 10px; margin-left: 100px;"><a href="https://forms.gle/4uLaKbQbFiefg8Uy7">Create A Deployment</a></li>
-            <li style="background-color: darkorange; border-radius: 10px; margin-left: 60px;"><a href="https://forms.gle/shPwUZuaJo3uii7t5">Feedback</a></li>
+    <nav> 
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/30/1A1A1A/multiply.png" alt="multiply"/></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contactmain.html">Contact</a></li>
+          <li><a href="features.html">Features</a></li>
         </ul>
-    </nav>
+        <ul>
+          <li><a href="#">HelpMe</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="about.html">About</a></li>
+          <li class="hideOnMobile"><a href="contactmain.html">Contact</a></li>
+          <li class="hideOnMobile"><a href="features.html">Features</a></li>
+          <li onclick=showSidebar() id="Menu"><a href="#"><img width="26" height="26" src="https://img.icons8.com/ios-filled/50/1A1A1A/menu--v6.png" alt="menu--v6"/></a></li>
+        </ul>
+      </nav>  
 
     <div class="hdd"> 
         <img src="HelpME-removebg-preview.png" alt="" class="logo3">
@@ -63,6 +69,7 @@
     </section>
 
     <style>
+       
         body {
             background-color: #f5f5f5;
             font-family: 'Poppins', sans-serif;
