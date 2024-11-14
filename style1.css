@@ -389,6 +389,7 @@ main {
 
    
 }
+
 .case-study:nth-child(2){
    display: flex;
    background-color: rgb(255, 255, 255);
@@ -439,6 +440,7 @@ main {
    font-size: 40px;
    align-self: center;
    padding: 20px;
+   transition-duration: 1s;
 }
 .case-study::after{
    content: "";
@@ -460,6 +462,9 @@ main {
    height: 4px;
    background-color: goldenrod;
    border: none;
+}
+.case-study h2:hover{
+   font-size: 45px;
 }
 .case-study p {
    font-size: 20px;

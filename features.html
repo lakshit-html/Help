@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         * {
             padding: 0;
@@ -129,23 +131,53 @@ nav li:first-child{
         }
 
         /* Footer styles */
-        footer {
-            background: linear-gradient(90deg, #e52e71, #ff8a00);
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .foot {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        .foot:hover {
-            color: #ffcc80;
-        }
+        footer{
+   display: grid;
+   position: absolute;
+   margin-top: 5%;
+   height: 50vh;
+   width: 100vw;
+   background-color: rgb(242, 225, 139);
+}
+footer img{
+   height: 200px;
+   width: 550px;
+   margin-left: -40PX;
+}
+footer .logo .logo-text{
+   font-size: 20px;
+}
+footer .logo{
+   display: grid;
+   place-items: center;
+   place-content: center;
+   place-self: start;
+   height: fit-content;
+   width: fit-content;
+}
+footer .buttons{
+   display: grid;
+   place-self: center;
+   align-self: center;
+   justify-self: center;
+   height: fit-content;
+   width: fit-content  ;
+   margin-left: -300px;
+   align-content: center;
+   margin-bottom: 400px;
+   margin-top: -150px;
+}
+
+.buttons ul li{
+   list-style-type: none;
+   line-height: 2.5;
+   color: black;
+}
+.buttons a {
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
     </style>
 </head>
 <body>
@@ -254,11 +286,23 @@ nav li:first-child{
 
     <!-- Footer -->
     <footer>
-        <a href="faq.html" class="foot">FAQ</a>
-        <a href="about.html" class="foot">Our Story</a>
-        <a href="contactmain.html" class="foot">Contact Us</a>
-        <a href="features.html" class="foot">Our Works</a>
-        <a href="Credits.html" class="foot">Credits</a>
-    </footer>
+        <div class="logo">
+          <img src="HelpME-removebg-preview.png" alt="">
+          <div class="logo-text">
+            <i class="fa-regular fa-copyright"></i>&nbsp;Copyright &nbsp;<i class="fa-regular fa-registered"></i>&nbsp;Registered
+          </div>
+        </div>
+        <div class="buttons">
+          <ul>
+            <li class="footer-buttons"><a href="#">Home</a></li>
+            <li class="footer-buttons"><a href="#">Blog</a></li>
+            <li class="footer-buttons"><a href="#">Credits</a></li>
+            <li class="footer-buttons"><a href="#">Who We Are ?</a></li>
+            <li class="footer-buttons"><a href="#">Meet !</a></li>
+            <li class="footer-buttons"><a href="#">Our Works</a></li>
+            <li class="footer-buttons"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>
