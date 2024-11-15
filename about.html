@@ -17,6 +17,7 @@
     }
 
 
+
       body{
    min-height: 100vh;
    background-image: url(bac.jpg);
@@ -85,14 +86,7 @@ nav li:first-child{
    width: 100%;
 
 }
-@media(max-width:600px){
-   #Menu{
-      display: flex;
-   }
-   .hideOnMobile{
-    display: none;
-   }
-} 
+
 
     /* Main Heading */
     h1 {
@@ -136,9 +130,9 @@ nav li:first-child{
     .divbg:hover {
       transform: translateY(-10px);
       background-color: rgba(248, 248, 255, 0.562);
-      h2{
-        color:#ff8800;
-      }
+      /* h2 {
+        color: #ff8800;
+      } */
     }
 
     h2 {
@@ -221,9 +215,15 @@ footer .buttons{
    text-decoration: none;
    font-size: 20px;
 }
+@media (max-width: 768px) {
+  html{
+    height: fit-content;
+    width: 1038px;
+  }
+}
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
+    /* Responsive Styles */ 
+    @media(max-width:800px){
       .objects {
         flex-direction: column;
         align-items: center;
@@ -232,7 +232,31 @@ footer .buttons{
       .content-left, .images-right {
         width: 100%;
       }
+   #Menu{
+      display: flex;
+   }
+   .hideOnMobile{
+    display: none;
+   }
+   html{
+      height: fit-content;
+      width: 509px;
     }
+footer img {
+    height: 96px;
+    width: 333px;
+    margin-left: -40PX;
+}
+footer {
+    display: flex
+;
+    position: relative;
+    margin-top: 5%;
+    height: 50vh;
+    width: 135vw;
+    background-color: rgb(242, 225, 139);
+}
+} 
   </style>
 </head>
 
@@ -268,23 +292,38 @@ footer .buttons{
     <div class="content-left">
       <div class="divbg">
         <h2>Introduction:</h2>
-        <p>Welcome to [HELP], a revolutionary platform connecting citizens with municipal corporations to address local issues efficiently...</p>
+        <p>Welcome to HelpMe!, a revolutionary platform connecting citizens with municipal corporations to address local issues efficiently. Our mission is to bridge the gap between citizens and municipal authorities, ensuring seamless communication and effective problem-solving.
+        </p>
       </div>
       <div class="divbg">
         <h2>Our Vision:</h2>
-        <p>A nation where every community thrives, and every citizen's voice is heard...</p>
+        <p>A nation where every community thrives, and every citizen's voice is heard. We envision a future where municipal services are accessible, efficient, and transparent, fostering vibrant, sustainable, and livable cities.
+        </p>
       </div>
       <div class="divbg">
         <h2>Our Objectives:</h2>
-        <p>1. Provide a user-friendly platform for citizens to report municipal-related issues...</p>
+        <p>1. Provide a user-friendly platform for citizens to report municipal-related issues.<br>
+          2. Ensure timely resolution of reported issues through collaboration with municipal authorities.<br>
+          3. Promote transparency, accountability, and civic engagement.<br>
+          4. Empower citizens to take ownership of community development.<br>
+          5. Foster partnerships with local organizations, NGOs, and government agencies.<br>
+        </p>
       </div>
       <div class="divbg">
         <h2>How We Work:</h2>
-        <p>1. Citizens report issues through our Deployment form...</p>
+        <p>1. Citizens report issues through ourDeployment Form.<br>
+          2. Our team verifies and categorizes reports.<br>
+          3. Municipal authorities receive notified reports and respond with updates.<br>
+          4. Citizens track progress and provide feedback<br></p>
       </div>
       <div class="divbg">
         <h2>Our Values:</h2>
-        <p>1. Citizen-centric approach<br>2. Transparency and accountability...</p>
+        <p>1. Citizen-centric approach<br>
+           2. Transparency and accountability<br>
+           3. Collaboration and partnerships<br>
+           4. Innovation and continuous improvement<br>
+           5. Inclusivity and social responsibility<br>
+          </p>
       </div>
       <h2>Meet Our Team:</h2>
     </div>
@@ -309,7 +348,6 @@ footer .buttons{
       <ul>
         <li class="footer-buttons"><a href="#">Home</a></li>
         <li class="footer-buttons"><a href="#">Blog</a></li>
-        <li class="footer-buttons"><a href="#">Credits</a></li>
         <li class="footer-buttons"><a href="#">Who We Are ?</a></li>
         <li class="footer-buttons"><a href="#">Meet !</a></li>
         <li class="footer-buttons"><a href="#">Our Works</a></li>
